@@ -1,0 +1,14 @@
+com/searchwork/ReactNativeFlipper.java
+ com.searchwork.ReactNativeFlipper
+ com.searchwork.ReactNativeFlipper$1
+ com.searchwork.ReactNativeFlipper$2
+ com.searchwork.ReactNativeFlipper$2$1
+com/searchwork/MainApplication.java
+ com.searchwork.MainApplication
+ com.searchwork.MainApplication$1
+com/searchwork/BuildConfig.java
+ com.searchwork.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/searchwork/MainActivity.java
+ com.searchwork.MainActivity

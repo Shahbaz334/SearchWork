@@ -1,0 +1,52 @@
+{
+    "baseUrl": "https://admin2.sadpoetrylive.com/api",
+    "endPoints": {
+        "Login": "/login",
+        "Register": "/register",
+        "OTP": "/send-otp",
+        "upload_files" :"/upload-files",
+        "JobsCategory": "/category/list_all",
+        "JobsList": "/jobs/list",
+        "PostJob": "/jobs/add",
+        "DeleteJob": "/jobs/delete",
+        "UpdateJob": "/jobs/update",
+        "ViewJob": "/jobs/view",
+        "MarkSavedJob": "/save/jobs",
+        "SavedJobsList": "/save/list",
+        "DeleteSavedJob": "/save/delete",
+        "ApplyJob": "/apply",
+        "ApplicantsList": "/apply/list",
+        "ViewProfile": "/applicant/viewuser",
+        "EmployerJobs": "/jobs/myjobs",
+        "UpdateProfile": "/profile-update",
+        "LoggedInUserProfile": "/profile-view",
+        "UpdatePassword": "/password-update",
+        "ForgotPassword": "/password-forget",
+        "JobStatus": "/jobs/status",
+        "deleteUser": "/delete_user",
+        "pauseUser": "/pause_user",
+        "subscribe": "/membership/packages",
+        "boostJob":"/boostjobs/packages",
+        "jobPurchase":"/boostjobs/purchase",
+        "payment": "/membership/purchase",
+        "verify_payment_intent":"/membership/verify_payment_intent"
+    },
+    "methods": {
+        "GET": "GET",
+        "POST": "POST",
+        "PUT": "PUT"
+    },
+    "responseCode": {
+        "success": 200,
+        "validationError": 401
+    },
+    "responseStatus": {
+        "success": "Success",
+        "reject": "Reject",
+        "failure": "Failure"
+    },
+    "apiMessage": {
+        "Network_Error": "Network error",
+        "Wrong": "Something went wrong."
+    }
+}

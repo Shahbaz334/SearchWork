@@ -1,0 +1,580 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.searchwork"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:9:5-77
+11-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:9:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:4:5-67
+12-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:5:5-78
+13-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:5:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:6:5-80
+14-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:6:22-78
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:8:5-80
+15-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:8:22-78
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:10:5-80
+16-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:10:22-77
+17    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+17-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:11:5-88
+17-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:11:22-85
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required to access Google Play Licensing -->
+18-->[com.facebook.flipper:flipper:0.75.1] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\ae4a1a13a04f02aba5a4b33775081795\jetified-flipper-0.75.1\AndroidManifest.xml:16:5-76
+18-->[com.facebook.flipper:flipper:0.75.1] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\ae4a1a13a04f02aba5a4b33775081795\jetified-flipper-0.75.1\AndroidManifest.xml:16:22-73
+19    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+19-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-73
+19-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-70
+20    <!--
+21         Required to keep CPU alive while downloading files
+22        (NOT to keep screen awake)
+23    -->
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-68
+24-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:22-65
+25    <!--
+26         Required to poll the state of the network connection
+27        and respond to changes
+28    -->
+29    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- See https://developer.android.com/training/package-visibility/declaring for more details. -->
+29-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-79
+29-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:22-76
+30    <queries>
+30-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:10:5-14:15
+31
+32        <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+33        <package android:name="com.android.chrome" />
+33-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:13:9-54
+33-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:13:18-51
+34    </queries>
+35
+36    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+36-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:27:5-81
+36-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:27:22-78
+37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+37-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:28:5-77
+37-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:28:22-74
+38
+39    <uses-feature
+39-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\ac7407cd14ac423d4ceaf8288533a2df\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+40        android:glEsVersion="0x00020000"
+40-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\ac7407cd14ac423d4ceaf8288533a2df\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+41        android:required="true" />
+41-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\ac7407cd14ac423d4ceaf8288533a2df\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+42    <!--
+43 <uses-permission android:name="android.permission.CAMERA" />
+44
+45     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+46
+47     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+48    -->
+49    <application
+49-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:13:5-40:19
+50        android:name="com.searchwork.MainApplication"
+50-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:14:7-38
+51        android:allowBackup="false"
+51-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:18:7-34
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.6.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\70bca851df55f7eba40452598bcf59ee\core-1.6.0\AndroidManifest.xml:24:18-86
+53        android:debuggable="true"
+54        android:icon="@mipmap/ic_launcher"
+54-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:16:7-41
+55        android:label="@string/app_name"
+55-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:15:7-39
+56        android:roundIcon="@mipmap/ic_launcher_round"
+56-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:17:7-52
+57        android:theme="@style/AppTheme"
+57-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:19:7-38
+58        android:usesCleartextTraffic="true" >
+58-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:20:7-42
+59        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+59-->C:\Users\shahb\Desktop\search\android\app\src\debug\AndroidManifest.xml:18:9-86
+59-->C:\Users\shahb\Desktop\search\android\app\src\debug\AndroidManifest.xml:18:19-83
+60
+61        <meta-data
+61-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:22:6-24:63
+62            android:name="com.google.android.geo.API_KEY"
+62-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:23:6-51
+63            android:value="AIzaSyAG8XBFKHqkH3iKweO_y3iC6kYvcwdsKxY" />
+63-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:24:6-61
+64
+65        <activity
+65-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:25:7-36:18
+66            android:name="com.searchwork.MainActivity"
+66-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:26:9-37
+67            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+67-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:28:9-86
+68            android:label="@string/app_name"
+68-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:27:9-41
+69            android:launchMode="singleTask"
+69-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:29:9-40
+70            android:windowSoftInputMode="adjustResize" >
+70-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:30:9-51
+71            <intent-filter>
+71-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:31:9-35:25
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:32:13-65
+72-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:32:21-62
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:33:13-73
+74-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:33:23-70
+75
+76                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+76-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:34:14-78
+76-->C:\Users\shahb\Desktop\search\android\app\src\main\AndroidManifest.xml:34:22-76
+77            </intent-filter>
+78        </activity>
+79
+80        <provider
+80-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-44:20
+81            android:name="com.RNFetchBlob.Utils.FileProvider"
+81-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
+82            android:authorities="com.searchwork.provider"
+82-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-60
+83            android:exported="false"
+83-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37
+84            android:grantUriPermissions="true" >
+84-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-47
+85            <meta-data
+85-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:58
+86                android:name="android.support.FILE_PROVIDER_PATHS"
+86-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-67
+87                android:resource="@xml/provider_paths" />
+87-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-55
+88        </provider>
+89        <provider
+89-->[:react-native-image-picker] C:\Users\shahb\Desktop\search\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+90            android:name="com.imagepicker.ImagePickerProvider"
+90-->[:react-native-image-picker] C:\Users\shahb\Desktop\search\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-63
+91            android:authorities="com.searchwork.imagepickerprovider"
+91-->[:react-native-image-picker] C:\Users\shahb\Desktop\search\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-71
+92            android:exported="false"
+92-->[:react-native-image-picker] C:\Users\shahb\Desktop\search\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+93            android:grantUriPermissions="true" >
+93-->[:react-native-image-picker] C:\Users\shahb\Desktop\search\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+94            <meta-data
+94-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-43:58
+95                android:name="android.support.FILE_PROVIDER_PATHS"
+95-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-67
+96                android:resource="@xml/imagepicker_provider_paths" />
+96-->[:rn-fetch-blob] C:\Users\shahb\Desktop\search\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:17-55
+97        </provider>
+98
+99        <activity
+99-->[com.stripe:paymentsheet:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\fd843f1c82e01b36a62464dd4a9dbb0c\jetified-paymentsheet-18.1.0\AndroidManifest.xml:10:9-13:69
+100            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+100-->[com.stripe:paymentsheet:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\fd843f1c82e01b36a62464dd4a9dbb0c\jetified-paymentsheet-18.1.0\AndroidManifest.xml:11:13-80
+101            android:exported="false"
+101-->[com.stripe:paymentsheet:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\fd843f1c82e01b36a62464dd4a9dbb0c\jetified-paymentsheet-18.1.0\AndroidManifest.xml:12:13-37
+102            android:theme="@style/StripePaymentSheetDefaultTheme" />
+102-->[com.stripe:paymentsheet:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\fd843f1c82e01b36a62464dd4a9dbb0c\jetified-paymentsheet-18.1.0\AndroidManifest.xml:13:13-66
+103        <activity
+103-->[com.stripe:paymentsheet:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\fd843f1c82e01b36a62464dd4a9dbb0c\jetified-paymentsheet-18.1.0\AndroidManifest.xml:14:9-17:69
+104            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+104-->[com.stripe:paymentsheet:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\fd843f1c82e01b36a62464dd4a9dbb0c\jetified-paymentsheet-18.1.0\AndroidManifest.xml:15:13-82
+105            android:exported="false"
+105-->[com.stripe:paymentsheet:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\fd843f1c82e01b36a62464dd4a9dbb0c\jetified-paymentsheet-18.1.0\AndroidManifest.xml:16:13-37
+106            android:theme="@style/StripePaymentSheetDefaultTheme" />
+106-->[com.stripe:paymentsheet:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\fd843f1c82e01b36a62464dd4a9dbb0c\jetified-paymentsheet-18.1.0\AndroidManifest.xml:17:13-66
+107        <activity
+107-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:17:9-20:57
+108            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+108-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:18:13-76
+109            android:exported="false"
+109-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:19:13-37
+110            android:theme="@style/StripeDefaultTheme" />
+110-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:20:13-54
+111        <activity
+111-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:21:9-24:57
+112            android:name="com.stripe.android.view.PaymentMethodsActivity"
+112-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:22:13-74
+113            android:exported="false"
+113-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:23:13-37
+114            android:theme="@style/StripeDefaultTheme" />
+114-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:24:13-54
+115        <activity
+115-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:25:9-28:57
+116            android:name="com.stripe.android.view.PaymentFlowActivity"
+116-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:26:13-71
+117            android:exported="false"
+117-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:27:13-37
+118            android:theme="@style/StripeDefaultTheme" />
+118-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:28:13-54
+119        <activity
+119-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:29:9-33:58
+120            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+120-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:30:13-78
+121            android:exported="false"
+121-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:31:13-37
+122            android:theme="@style/StripeDefaultTheme"
+122-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:32:13-54
+123            android:windowSoftInputMode="adjustResize" />
+123-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:33:13-55
+124        <activity
+124-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:34:9-37:61
+125            android:name="com.stripe.android.view.PaymentRelayActivity"
+125-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:35:13-72
+126            android:exported="false"
+126-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:36:13-37
+127            android:theme="@style/StripeTransparentTheme" />
+127-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:37:13-58
+128        <!--
+129        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+130        launched the browser Activity will also handle the return URL deep link.
+131        -->
+132        <activity
+132-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:43:9-60:20
+133            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+133-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:44:13-85
+134            android:exported="true"
+134-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:45:13-36
+135            android:launchMode="singleTask"
+135-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:46:13-44
+136            android:theme="@style/StripeTransparentTheme" >
+136-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:47:13-58
+137            <intent-filter>
+137-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:48:13-59:29
+138                <action android:name="android.intent.action.VIEW" />
+138-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:49:17-69
+138-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:49:25-66
+139
+140                <category android:name="android.intent.category.DEFAULT" />
+140-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:51:17-76
+140-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:51:27-73
+141                <category android:name="android.intent.category.BROWSABLE" />
+141-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:52:17-78
+141-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:52:27-75
+142
+143                <!-- Must match `DefaultReturnUrl#value`. -->
+144                <data
+144-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:55:17-58:50
+145                    android:host="payment_return_url"
+145-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:56:21-54
+146                    android:path="/com.searchwork"
+146-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:57:21-53
+147                    android:scheme="stripesdk" />
+147-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:58:21-47
+148            </intent-filter>
+149        </activity>
+150        <activity
+150-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:61:9-64:57
+151            android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity"
+151-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:62:13-114
+152            android:exported="false"
+152-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:63:13-37
+153            android:theme="@style/StripeDefaultTheme" />
+153-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:64:13-54
+154        <activity
+154-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:65:9-68:66
+155            android:name="com.stripe.android.googlepaylauncher.StripeGooglePayActivity"
+155-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:66:13-88
+156            android:exported="false"
+156-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:67:13-37
+157            android:theme="@style/StripeGooglePayDefaultTheme" />
+157-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:68:13-63
+158        <activity
+158-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:69:9-72:66
+159            android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity"
+159-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:70:13-90
+160            android:exported="false"
+160-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:71:13-37
+161            android:theme="@style/StripeGooglePayDefaultTheme" />
+161-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:72:13-63
+162        <activity
+162-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:73:9-76:66
+163            android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity"
+163-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:74:13-103
+164            android:exported="false"
+164-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:75:13-37
+165            android:theme="@style/StripeGooglePayDefaultTheme" />
+165-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:76:13-63
+166        <activity
+166-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:77:9-80:62
+167            android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity"
+167-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:78:13-107
+168            android:exported="false"
+168-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:79:13-37
+169            android:theme="@style/PayLauncherDefaultTheme" />
+169-->[com.stripe:payments-core:18.1.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\e6ffda5a4c968ddc7412b6758a55c423\jetified-payments-core-18.1.0\AndroidManifest.xml:80:13-59
+170        <activity
+170-->[com.stripe:stripe-3ds2-android:6.1.2] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\3eb23aebf371054623cc7533b4901611\jetified-stripe-3ds2-android-6.1.2\AndroidManifest.xml:10:9-13:54
+171            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+171-->[com.stripe:stripe-3ds2-android:6.1.2] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\3eb23aebf371054623cc7533b4901611\jetified-stripe-3ds2-android-6.1.2\AndroidManifest.xml:11:13-81
+172            android:exported="false"
+172-->[com.stripe:stripe-3ds2-android:6.1.2] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\3eb23aebf371054623cc7533b4901611\jetified-stripe-3ds2-android-6.1.2\AndroidManifest.xml:12:13-37
+173            android:theme="@style/Stripe3DS2Theme" />
+173-->[com.stripe:stripe-3ds2-android:6.1.2] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\3eb23aebf371054623cc7533b4901611\jetified-stripe-3ds2-android-6.1.2\AndroidManifest.xml:13:13-51
+174
+175        <provider
+175-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:31:9-37:35
+176            android:name="androidx.work.impl.WorkManagerInitializer"
+176-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:32:13-69
+177            android:authorities="com.searchwork.workmanager-init"
+177-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:33:13-68
+178            android:directBootAware="false"
+178-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:34:13-44
+179            android:exported="false"
+179-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:35:13-37
+180            android:multiprocess="true" />
+180-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:36:13-40
+181
+182        <service
+182-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:39:9-44:35
+183            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+183-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:40:13-88
+184            android:directBootAware="false"
+184-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:41:13-44
+185            android:enabled="@bool/enable_system_alarm_service_default"
+185-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:42:13-72
+186            android:exported="false" />
+186-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:43:13-37
+187        <service
+187-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:45:9-51:35
+188            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+188-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:46:13-84
+189            android:directBootAware="false"
+189-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:47:13-44
+190            android:enabled="@bool/enable_system_job_service_default"
+190-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:48:13-70
+191            android:exported="true"
+191-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:49:13-36
+192            android:permission="android.permission.BIND_JOB_SERVICE" />
+192-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:50:13-69
+193        <service
+193-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:52:9-57:35
+194            android:name="androidx.work.impl.foreground.SystemForegroundService"
+194-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:53:13-81
+195            android:directBootAware="false"
+195-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:54:13-44
+196            android:enabled="@bool/enable_system_foreground_service_default"
+196-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:55:13-77
+197            android:exported="false" />
+197-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:56:13-37
+198
+199        <receiver
+199-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:59:9-64:35
+200            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+200-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:60:13-88
+201            android:directBootAware="false"
+201-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:61:13-44
+202            android:enabled="true"
+202-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:62:13-35
+203            android:exported="false" />
+203-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:63:13-37
+204        <receiver
+204-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:65:9-75:20
+205            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+205-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:66:13-106
+206            android:directBootAware="false"
+206-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:67:13-44
+207            android:enabled="false"
+207-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:68:13-36
+208            android:exported="false" >
+208-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:69:13-37
+209            <intent-filter>
+209-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:71:13-74:29
+210                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+210-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:72:17-87
+210-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:72:25-84
+211                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+211-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:73:17-90
+211-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:73:25-87
+212            </intent-filter>
+213        </receiver>
+214        <receiver
+214-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:76:9-86:20
+215            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+215-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:77:13-104
+216            android:directBootAware="false"
+216-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:78:13-44
+217            android:enabled="false"
+217-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:79:13-36
+218            android:exported="false" >
+218-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:80:13-37
+219            <intent-filter>
+219-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:82:13-85:29
+220                <action android:name="android.intent.action.BATTERY_OKAY" />
+220-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:83:17-77
+220-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:83:25-74
+221                <action android:name="android.intent.action.BATTERY_LOW" />
+221-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:84:17-76
+221-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:84:25-73
+222            </intent-filter>
+223        </receiver>
+224        <receiver
+224-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:87:9-97:20
+225            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+225-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:88:13-104
+226            android:directBootAware="false"
+226-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:89:13-44
+227            android:enabled="false"
+227-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:90:13-36
+228            android:exported="false" >
+228-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:91:13-37
+229            <intent-filter>
+229-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:93:13-96:29
+230                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+230-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:94:17-83
+230-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:94:25-80
+231                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+231-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:95:17-82
+231-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:95:25-79
+232            </intent-filter>
+233        </receiver>
+234        <receiver
+234-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:98:9-107:20
+235            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+235-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:99:13-103
+236            android:directBootAware="false"
+236-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:100:13-44
+237            android:enabled="false"
+237-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:101:13-36
+238            android:exported="false" >
+238-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:102:13-37
+239            <intent-filter>
+239-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:104:13-106:29
+240                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+240-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:105:17-79
+240-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:105:25-76
+241            </intent-filter>
+242        </receiver>
+243        <receiver
+243-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:108:9-119:20
+244            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+244-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:109:13-88
+245            android:directBootAware="false"
+245-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:110:13-44
+246            android:enabled="false"
+246-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:111:13-36
+247            android:exported="false" >
+247-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:112:13-37
+248            <intent-filter>
+248-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:114:13-118:29
+249                <action android:name="android.intent.action.BOOT_COMPLETED" />
+249-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:115:17-79
+249-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:115:25-76
+250                <action android:name="android.intent.action.TIME_SET" />
+250-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:116:17-73
+250-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:116:25-70
+251                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+251-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:117:17-81
+251-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:117:25-78
+252            </intent-filter>
+253        </receiver>
+254        <receiver
+254-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:120:9-129:20
+255            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+255-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:121:13-99
+256            android:directBootAware="false"
+256-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:122:13-44
+257            android:enabled="@bool/enable_system_alarm_service_default"
+257-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:123:13-72
+258            android:exported="false" >
+258-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:124:13-37
+259            <intent-filter>
+259-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:126:13-128:29
+260                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+260-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:127:17-98
+260-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:127:25-95
+261            </intent-filter>
+262        </receiver>
+263        <receiver
+263-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:130:9-140:20
+264            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+264-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:131:13-78
+265            android:directBootAware="false"
+265-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:132:13-44
+266            android:enabled="true"
+266-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:133:13-35
+267            android:exported="true"
+267-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:134:13-36
+268            android:permission="android.permission.DUMP" >
+268-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:135:13-57
+269            <intent-filter>
+269-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:137:13-139:29
+270                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+270-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:138:17-88
+270-->[androidx.work:work-runtime:2.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\d4a538c88e6de302ddb4da4f38477c6c\work-runtime-2.5.0\AndroidManifest.xml:138:25-85
+271            </intent-filter>
+272        </receiver>
+273
+274        <service
+274-->[androidx.room:room-runtime:2.2.5] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\294ae0215b65db79b094b4fe7ac20a68\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+275            android:name="androidx.room.MultiInstanceInvalidationService"
+275-->[androidx.room:room-runtime:2.2.5] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\294ae0215b65db79b094b4fe7ac20a68\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+276            android:directBootAware="true"
+276-->[androidx.room:room-runtime:2.2.5] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\294ae0215b65db79b094b4fe7ac20a68\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+277            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+277-->[androidx.room:room-runtime:2.2.5] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\294ae0215b65db79b094b4fe7ac20a68\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+278        <uses-library
+278-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\ac7407cd14ac423d4ceaf8288533a2df\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+279            android:name="org.apache.http.legacy"
+279-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\ac7407cd14ac423d4ceaf8288533a2df\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+280            android:required="false" />
+280-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\ac7407cd14ac423d4ceaf8288533a2df\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+281
+282        <activity
+282-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\4e0a04db41d4674c4d2e6f9fb3edc554\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+283            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+283-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\4e0a04db41d4674c4d2e6f9fb3edc554\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+284            android:exported="false"
+284-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\4e0a04db41d4674c4d2e6f9fb3edc554\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+285            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+285-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\4e0a04db41d4674c4d2e6f9fb3edc554\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+286
+287        <meta-data
+287-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\c4ebfffec69e10b8963739b62ecda678\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
+288            android:name="com.google.android.gms.version"
+288-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\c4ebfffec69e10b8963739b62ecda678\jetified-play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
+289            android:value="@integer/google_play_services_version" />
+289-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\c4ebfffec69e10b8963739b62ecda678\jetified-play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
+290
+291        <provider
+291-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:26:9-34:20
+292            android:name="androidx.startup.InitializationProvider"
+292-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:27:13-67
+293            android:authorities="com.searchwork.androidx-startup"
+293-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:28:13-68
+294            android:exported="false" >
+294-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:29:13-37
+295            <meta-data
+295-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:31:13-33:52
+296                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+296-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:32:17-85
+297                android:value="androidx.startup" />
+297-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:33:17-49
+298        </provider>
+299
+300        <receiver
+300-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:36:9-45:20
+301            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+301-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:37:13-76
+302            android:directBootAware="false"
+302-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:38:13-44
+303            android:enabled="true"
+303-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:39:13-35
+304            android:exported="true"
+304-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:40:13-36
+305            android:permission="android.permission.DUMP" >
+305-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:41:13-57
+306            <intent-filter>
+306-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:42:13-44:29
+307                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+307-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:43:17-91
+307-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\shahb\.gradle\caches\transforms-2\files-2.1\707d24418c29047d210ba9fb7deaf380\jetified-profileinstaller-1.0.4\AndroidManifest.xml:43:25-88
+308            </intent-filter>
+309        </receiver>
+310    </application>
+311
+312</manifest>

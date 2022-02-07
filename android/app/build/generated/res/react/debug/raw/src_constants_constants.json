@@ -1,0 +1,45 @@
+{
+    "screen": {
+        "BoostJob":"BoostJob_Screen",
+        "Payment_Screen":"Payment_Screen",
+        "Payment_Card":"Payment_Card",
+        "SplashScreen": "SplashScreen",
+        "LoginScreen": "LoginScreen",
+        "ForgotPassScreen": "ForgotPassScreen",
+        "RegisterScreen": "RegisterScreen",
+        "EmployeeDashboard": "EmployeeDashboard",
+        "JobListing": "JobListing",
+        "JobCategoryList": "JobCategoryList",
+        "SavedJobs": "SavedJobs",
+        "EmployeeProfile": "EmployeeProfile",
+        "Resume": "Resume",
+        "IndividualJob": "IndividualJob",
+        "JobPosted": "JobPosted",
+        "Draft": "Draft",
+        "JobPostedList": "JobPostedList",
+        "EmployerDashboard": "EmployerDashboard",
+        "EmployerJobView": "EmployerJobView",
+        "ApplicantsList": "ApplicantsList",
+        "AppliedJobsList": "AppliedJobsList",
+        "Applicants": "Applicants",
+        "EmployerProfile": "EmployerProfile",
+        "UpdateJob": "UpdateJob",
+        "BottomTabNavigation": "BottomTabNavigation",
+        "DrawerNavigation": "DrawerNavigation",
+        "EmployerDrawerStack": "EmployerDrawerStack",
+        "DrawerContent": "DrawerContent",
+        "JobCategory": "JobCategory",
+        "ViewJob": "ViewJob",
+        "EmployeeResume": "EmployeeResume",
+        "ChangePassword": "ChangePassword",
+        "AllJobsScreen": "AllJobsScreen"
+       
+    },
+    "url":{
+        "webiste": "https://hegemonicsoftwares.com",
+        "website": "https://hegemonicsoftwares.com",
+        "Map": "https://www.google.com/maps/search/"
+    },
+    "Map": "https://www.google.com/maps/search/"
+    
+}
