@@ -37,8 +37,15 @@ anim fragment_fast_out_extra_slow_in
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim rns_fade_from_bottom
+anim rns_fade_to_bottom
+anim rns_no_animation_250
+anim rns_no_animation_350
+anim rns_no_animation_medium
+anim rns_slide_in_from_bottom
 anim rns_slide_in_from_left
 anim rns_slide_in_from_right
+anim rns_slide_out_to_bottom
 anim rns_slide_out_to_left
 anim rns_slide_out_to_right
 anim stripe_3ds2_challenge_transition_slide_in
@@ -2061,6 +2068,7 @@ drawable googlepay_button_no_shadow_background_image_pressed
 drawable googlepay_button_overlay
 drawable ic_arrow
 drawable ic_clock_black_24dp
+drawable ic_dropdown
 drawable ic_indicator
 drawable ic_keyboard_black_24dp
 drawable ic_mtrl_checked_circle
@@ -2110,6 +2118,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pay_with_googlepay_button_content
 drawable redbox_top_border_background
+drawable spinner_dropdown_background
 drawable stripe_3ds2_ic_amex
 drawable stripe_3ds2_ic_cartesbancaires
 drawable stripe_3ds2_ic_discover
@@ -2454,6 +2463,8 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id dropdown_background
+id dropdown_icon
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3148,6 +3159,8 @@ raw amu_unknwown_folder
 raw amu_unsupported
 raw amu_visibility_ground_overlay
 raw app
+raw node_modules_axios_package
+raw node_modules_reactnative_package
 raw node_modules_reactnativevectoricons_glyphmaps_antdesign
 raw node_modules_reactnativevectoricons_glyphmaps_entypo
 raw node_modules_reactnativevectoricons_glyphmaps_feather
