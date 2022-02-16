@@ -1,4 +1,11 @@
-import { StyleSheet, Button, View, Text, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  Button,
+  View,
+  Text,
+  TouchableOpacity,
+  SafeAreaView,
+} from "react-native";
 import React, { useState } from "react";
 import { CreditCardInput } from "react-native-credit-card-input";
 import SmallButton from "../Components/atoms/SmallButton";
@@ -15,88 +22,88 @@ import {
 import { login } from "../redux/slices";
 import { CommonActions } from "@react-navigation/native";
 const Payment_Card = (props) => {
-  const payment_3d = () => {
-    if (card === "") {
-      console.log("empty");
-    } else {
-      console.log("heelo there");
-      createPaymentMethod({ type: "Card", card: card })
-        .then((res) => {
-          console.log("res", res);
-          tokenid = res.paymentMethod.id;
-          console.log({
-            token: res.paymentMethod.id,
-          });
+  // const payment_3d = () => {
+  //   if (card === "") {
+  //     console.log("empty");
+  //   } else {
+  //     console.log("heelo there");
+  //     createPaymentMethod({ type: "Card", card: card })
+  //       .then((res) => {
+  //         console.log("res", res);
+  //         tokenid = res.paymentMethod.id;
+  //         console.log({
+  //           token: res.paymentMethod.id,
+  //         });
 
-          apiCall(
-            ApiConstants.methods.POST,
-            ApiConstants.endPoints.payment,
-            form
-          )
-            .then((res) => {
-              console.log(res);
-              setLoader(false);
-              if (res.data[0].condition == "requires_action") {
-                console.log("action require");
-                setLoader(true);
-                handleCardAction(res.data[0].data)
-                  .then((responce) => {
-                    console.log("intend id", responce.paymentIntent.id);
-                    StripeService.trialStripe({
-                      student_id: props.authData.user_id,
-                      instructor_id: cardDetail.instructorId,
-                      time_slot: cardDetail.timeSlot,
-                      booked_date: getFormattedDate(cardDetail.timeDate),
-                      timezone: cardDetail.timeZone,
-                      appointment_status: "booked",
-                      gateway: "Stripe",
-                      currency: "GBP",
-                      price: cardDetail.price,
-                      payment_status: "paid",
-                      created: getFormattedDate(new Date()),
-                      token: tokenid,
-                      payment_intent_id: responce.paymentIntent.id,
-                    })
-                      .then((res) => {
-                        console.log(res);
-                        if (res.code == 200) {
-                          console.log("successfully");
-                        } else {
-                          console.log("err");
-                        }
-                      })
-                      .catch((err) => {
-                        console.log(err);
-                      });
-                  })
-                  .catch((err) => {
-                    console.log(err);
-                  });
-              } else {
-                if (res.status == 200) {
-                  showMessage({
-                    message: "Payment Successfully!",
-                    type: "success",
-                  });
-                  console.log("nskansknask");
-                  props.navigation.navigate("PaymentSuccess", { check: false });
-                } else {
-                  showMessage({
-                    message: "An error accoured while payment!",
-                    type: "danger",
-                  });
-                }
-              }
-            })
-            .catch((err) => {
-              console.log(err);
-            });
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    }
-  };
+  //         apiCall(
+  //           ApiConstants.methods.POST,
+  //           ApiConstants.endPoints.payment,
+  //           form
+  //         )
+  //           .then((res) => {
+  //             console.log("first res", res);
+  //             setLoader(false);
+  //             if (res.data[0].condition == "requires_action") {
+  //               console.log("action require");
+  //               setLoader(true);
+  //               handleCardAction(res.data[0].data)
+  //                 .then((responce) => {
+  //                   console.log("intend id", responce.paymentIntent.id);
+  //                   StripeService.trialStripe({
+  //                     student_id: props.authData.user_id,
+  //                     instructor_id: cardDetail.instructorId,
+  //                     time_slot: cardDetail.timeSlot,
+  //                     booked_date: getFormattedDate(cardDetail.timeDate),
+  //                     timezone: cardDetail.timeZone,
+  //                     appointment_status: "booked",
+  //                     gateway: "Stripe",
+  //                     currency: "GBP",
+  //                     price: cardDetail.price,
+  //                     payment_status: "paid",
+  //                     created: getFormattedDate(new Date()),
+  //                     token: tokenid,
+  //                     payment_intent_id: responce.paymentIntent.id,
+  //                   })
+  //                     .then((res) => {
+  //                       console.log(res);
+  //                       if (res.code == 200) {
+  //                         console.log("successfully");
+  //                       } else {
+  //                         console.log("err");
+  //                       }
+  //                     })
+  //                     .catch((err) => {
+  //                       console.log(err);
+  //                     });
+  //                 })
+  //                 .catch((err) => {
+  //                   console.log(err);
+  //                 });
+  //             } else {
+  //               if (res.status == 200) {
+  //                 showMessage({
+  //                   message: "Payment Successfully!",
+  //                   type: "success",
+  //                 });
+  //                 console.log("nskansknask");
+  //                 props.navigation.navigate("PaymentSuccess", { check: false });
+  //               } else {
+  //                 showMessage({
+  //                   message: "An error accoured while payment!",
+  //                   type: "danger",
+  //                 });
+  //               }
+  //             }
+  //           })
+  //           .catch((err) => {
+  //             console.log(err);
+  //           });
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //   }
+  // };
 
   const [card, setCard] = useState("");
   const { createToken, createPaymentMethod, handleCardAction } = useStripe();
@@ -161,6 +168,7 @@ const Payment_Card = (props) => {
   };
   return (
     <View>
+      <SafeAreaView />
       <CardField
         postalCodeEnabled={false}
         placeholder={{

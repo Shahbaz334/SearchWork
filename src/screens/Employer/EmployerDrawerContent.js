@@ -392,9 +392,8 @@ const styles = StyleSheet.create({
   },
   bottomContainer: {
     marginTop: "auto",
-    flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     backgroundColor: colors.primaryColor,
     height: Dimensions.get("screen").height * 0.11,
     borderBottomRightRadius: 40,
