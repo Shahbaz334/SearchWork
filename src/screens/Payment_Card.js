@@ -6,7 +6,7 @@ import colors from "../Constants/colors";
 import stripe from "react-native-stripe-client";
 import { apiCall } from "../service/ApiCall";
 import ApiConstants from "../service/ApiConstants.json";
-import Constant from '../Constants/Constants.json'
+import Constant from "../Constants/Constants.json";
 import {
   StripeProvider,
   useStripe,
@@ -15,18 +15,14 @@ import {
 import { login } from "../redux/slices";
 import { CommonActions } from "@react-navigation/native";
 const Payment_Card = (props) => {
-
-
-
-
   const payment_3d = () => {
-    if (card === '') {
-      console.log('empty')
+    if (card === "") {
+      console.log("empty");
     } else {
-      console.log('heelo there');
-      createPaymentMethod({ type: 'Card', card: card })
-        .then(res => {
-          console.log('res', res);
+      console.log("heelo there");
+      createPaymentMethod({ type: "Card", card: card })
+        .then((res) => {
+          console.log("res", res);
           tokenid = res.paymentMethod.id;
           console.log({
             token: res.paymentMethod.id,
@@ -37,98 +33,76 @@ const Payment_Card = (props) => {
             ApiConstants.endPoints.payment,
             form
           )
-            .then(res => {
+            .then((res) => {
               console.log(res);
               setLoader(false);
-              if (res.data[0].condition == 'requires_action') {
-                console.log('action require');
+              if (res.data[0].condition == "requires_action") {
+                console.log("action require");
                 setLoader(true);
                 handleCardAction(res.data[0].data)
-                  .then(responce => {
-                    console.log('intend id', responce.paymentIntent.id);
+                  .then((responce) => {
+                    console.log("intend id", responce.paymentIntent.id);
                     StripeService.trialStripe({
                       student_id: props.authData.user_id,
                       instructor_id: cardDetail.instructorId,
                       time_slot: cardDetail.timeSlot,
                       booked_date: getFormattedDate(cardDetail.timeDate),
                       timezone: cardDetail.timeZone,
-                      appointment_status: 'booked',
-                      gateway: 'Stripe',
-                      currency: 'GBP',
+                      appointment_status: "booked",
+                      gateway: "Stripe",
+                      currency: "GBP",
                       price: cardDetail.price,
-                      payment_status: 'paid',
+                      payment_status: "paid",
                       created: getFormattedDate(new Date()),
                       token: tokenid,
                       payment_intent_id: responce.paymentIntent.id,
                     })
-                      .then(res => {
+                      .then((res) => {
                         console.log(res);
                         if (res.code == 200) {
-                          console.log('successfully')
+                          console.log("successfully");
                         } else {
-                         console.log('err')
+                          console.log("err");
                         }
                       })
-                      .catch(err => {
-                      
+                      .catch((err) => {
                         console.log(err);
                       });
                   })
-                  .catch(err => {
-                   
+                  .catch((err) => {
                     console.log(err);
                   });
               } else {
                 if (res.status == 200) {
                   showMessage({
-                    message: 'Payment Successfully!',
-                    type: 'success',
+                    message: "Payment Successfully!",
+                    type: "success",
                   });
                   console.log("nskansknask");
-                  props.navigation.navigate('PaymentSuccess', { check: false });
-                  
-                 
-                  
+                  props.navigation.navigate("PaymentSuccess", { check: false });
                 } else {
                   showMessage({
-                    message: 'An error accoured while payment!',
-                    type: 'danger',
+                    message: "An error accoured while payment!",
+                    type: "danger",
                   });
                 }
               }
             })
-            .catch(err => {
-            
+            .catch((err) => {
               console.log(err);
             });
         })
-        .catch(err => {
-        
+        .catch((err) => {
           console.log(err);
         });
     }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  };
 
   const [card, setCard] = useState("");
   const { createToken, createPaymentMethod, handleCardAction } = useStripe();
   const job_id = props.route?.params?.job_id;
   const package_id_boost = props.route?.params?.package_id;
-  console.log('job job',job_id)
+  console.log("job job", job_id);
   let package_id = 1;
   const payment = async () => {
     const res = await createPaymentMethod({ type: "Card", card: card });
@@ -141,44 +115,46 @@ const Payment_Card = (props) => {
     form.append("token", token);
     console.log("form", form);
     try {
-      if(job_id){
-        const jobData=new FormData()
-        jobData.append('package_id',package_id_boost)
-        jobData.append('token',token)
-        jobData.append("job_id",job_id)
-        const boost_Api=await apiCall(
+      if (job_id) {
+        const jobData = new FormData();
+        jobData.append("package_id", package_id_boost);
+        jobData.append("token", token);
+        jobData.append("job_id", job_id);
+        const boost_Api = await apiCall(
           ApiConstants.methods.POST,
           ApiConstants.endPoints.jobPurchase,
           jobData
+        );
+        console.log("jobBoost", boost_Api);
+      } else {
+        const api = await apiCall(
+          ApiConstants.methods.POST,
+          ApiConstants.endPoints.payment,
+          form
+        );
+        console.log("api", api.data);
 
-        )
-          console.log("jobBoost",boost_Api);
+        if (api.data.response.code == 200) {
+          alert("Package Purchased Successfully");
+          props.navigation.dispatch(
+            CommonActions.reset({
+              index: 0,
+              routes: [{ name: Constant.screen.LoginScreen }],
+            })
+          );
+          dispatch(login(null));
+        } else if (api.data.response.code == 1) {
+          console.log("sasasa", api.data.response.data);
 
-
+          handleCardAction(api.data.response.data.payment_intent)
+            .then((responce) => {
+              console.log("responce", responce);
+            })
+            .catch((error) => {
+              console.log(error);
+            });
+        }
       }
-      else{
-
-    
-      const api = await apiCall(
-        ApiConstants.methods.POST,
-        ApiConstants.endPoints.payment,
-        form
-      );
-      console.log("api", api.data);
-
-      if (api.data.response.code == 200) {
-        alert("Package Purchased Successfully");
-        props.navigation.dispatch(CommonActions.reset({ index: 0, routes: [{ name: Constant.screen.LoginScreen }] }));
-        dispatch(login(null))
-      } else if (api.data.response.code == 1) {
-        console.log('sasasa',api.data.response.data)
-        
-        // handleCardAction(api.data.response.data.payment_intent)
-        // .then(responce => {
-        //   console.log('responce',responce)
-        // })
-     
-      }  }
     } catch (error) {
       console.log(error);
     }
@@ -787,4 +763,4 @@ export default Payment_Card;
 //     flexDirection: 'row',
 //     backgroundColor: 'white',
 //     elevation: 5,
-// 
+//
