@@ -50,7 +50,7 @@ import MapView, { PROVIDER_GOOGLE, Marker } from "react-native-maps";
 import { strings } from "../../Language/i18n";
 import LocalStrings from "../../Language/Strings";
 import AsyncStorage from "@react-native-community/async-storage";
-
+import CustomDrop from "../../Components/organisms/CustomDrop";
 //import translate from 'google-translate-api';
 //import {GoogleTranslator} from '@translate-tools/core/translators/GoogleTranslator';
 
@@ -80,7 +80,7 @@ const JobPosted = ({ navigation }) => {
   const [jobDuration, setJobDuration] = useState("");
   const [jobCategory, setJobCategory] = useState(0);
   const [jobSubCategory, setJobSubCategory] = useState(0);
-  const [reqLang, setReqLang] = useState(0);
+  const [reqLang, setReqLang] = useState();
   const [reqExp, setReqExp] = useState(0);
   const [jobDescription, setJobDescription] = useState("");
   const [jobPostNos, setJobPostNos] = useState("");
@@ -396,6 +396,7 @@ const JobPosted = ({ navigation }) => {
         </HeaderRowContainer>
 
         <View style={styles.infoContainer}>
+
           <InputField
             textStyle={{
               color:
@@ -439,7 +440,7 @@ const JobPosted = ({ navigation }) => {
               }}
             />
 
-            <CustomPicker
+            {/* <CustomPicker
               pickerTitleStyle={{
                 color:
                   jobDuration == "" && missingField == true
@@ -466,8 +467,24 @@ const JobPosted = ({ navigation }) => {
                 value={"full_time"}
                 style={{ fontSize: 14 }}
               />
-            </CustomPicker>
+            </CustomPicker> */}
+
+
           </View>
+
+          <View style={{marginLeft:5}}>
+           <Text style={{color:colors.primaryColor,fontSize:16,fontWeight:"bold"}}> {LocalStrings.JobType} </Text>
+          </View>
+          <CustomDrop
+            data={['part time', 'full time']}
+            defaultButtonText={'JobType'}
+            onSelect={(itemValue, itemIndex) => {
+              setJobDuration(itemValue);
+              console.log('hasbxhka', jobObj.duration = itemValue);
+              dispatch(setJobPost(jobObj));
+            }}
+          />
+
 
           {/* <CustomPicker
             pickerTitleStyle={{ color: jobCategory == 0 && missingField == true ? 'red' : colors.primaryColor }}
@@ -498,7 +515,7 @@ const JobPosted = ({ navigation }) => {
               jobObj.jobCategory = itemValue;
               dispatch(setJobPost(jobObj));
               console.log("jjjj", itemValue);
-            }}
+            }} 
           >
             {/* {
               // category_id_decode
@@ -515,6 +532,22 @@ const JobPosted = ({ navigation }) => {
               />
             ))}
           </CustomPicker>
+          <View style={{marginLeft:5}}>
+           <Text style={{color:colors.primaryColor,fontSize:16,fontWeight:"bold"}}> {LocalStrings.JobCategory} </Text>
+          </View>
+          <CustomDrop
+            data={categoryList.map((val)=>val.name)}
+            defaultButtonText={'Category'}
+            onSelect={(itemValue, itemIndex) => {
+              setJobCategory(itemValue);
+              jobObj.jobCategory = itemValue;
+              dispatch(setJobPost(jobObj));
+              console.log("jjjj", itemValue);
+            }}
+          />
+
+
+          
 
           {/* {
             jobCategory == 'Other' ?
@@ -533,8 +566,8 @@ const JobPosted = ({ navigation }) => {
               textStyle={{
                 color:
                   subCategoryItems != null &&
-                  jobSubCategory == 0 &&
-                  missingField == true
+                    jobSubCategory == 0 &&
+                    missingField == true
                     ? "red"
                     : colors.primaryColor,
               }}
@@ -563,49 +596,63 @@ const JobPosted = ({ navigation }) => {
             //     dispatch(setJobPost(jobObj))
             //   }}
             // >
-            <CustomPicker
-              pickerTitleStyle={{
-                color:
-                  subCategoryItems != null &&
-                  jobSubCategory == 0 &&
-                  missingField == true
-                    ? "red"
-                    : colors.primaryColor,
-              }}
-              pickerContainerStyle={{ marginTop: 10 }}
-              label="Select Job Sub Category"
-              pickerTitle="Job Sub Category"
-              selectedValue={jobSubCategory}
-              onValueChange={(itemValue, itemIndex) => {
-                setJobSubCategory(itemValue);
-                jobObj.jobSubCategory = itemValue;
-                dispatch(setJobPost(jobObj));
-              }}
-            >
-              {/* {
-                  subCategoryItems != null ?
-                    subCategoryItems.map((val, index) => (
-                      <Picker.Item style={{ fontSize: 14 }} key={index} label={val.name} value={val.id} />
-                    ))
-                    : null
-                }
-              </CustomPicker> */}
-              {subCategoryItems != null
-                ? subCategoryItems.map((val, index) => (
-                    <Picker.Item
-                      style={{ fontSize: 14 }}
-                      key={index}
-                      label={val.name}
-                      value={val.id}
-                    />
-                  ))
-                : null}
-            </CustomPicker>
+            // <CustomPicker
+            //   pickerTitleStyle={{
+            //     color:
+            //       subCategoryItems != null &&
+            //         jobSubCategory == 0 &&
+            //         missingField == true
+            //         ? "red"
+            //         : colors.primaryColor,
+            //   }}
+            //   pickerContainerStyle={{ marginTop: 10 }}
+            //   label="Select Job Sub Category"
+            //   pickerTitle="Job Sub Category"
+            //   selectedValue={jobSubCategory}
+            //   onValueChange={(itemValue, itemIndex) => {
+            //     setJobSubCategory(itemValue);
+            //     jobObj.jobSubCategory = itemValue;
+            //     dispatch(setJobPost(jobObj));
+            //   }}
+            // >
+            //   {/* {
+            //       subCategoryItems != null ?
+            //         subCategoryItems.map((val, index) => (
+            //           <Picker.Item style={{ fontSize: 14 }} key={index} label={val.name} value={val.id} />
+            //         ))
+            //         : null
+            //     }
+            //   </CustomPicker> */}
+            //   {subCategoryItems != null
+            //     ? subCategoryItems.map((val, index) => (
+            //       <Picker.Item
+            //         style={{ fontSize: 14 }}
+            //         key={index}
+            //         label={val.name}
+            //         value={val.id}
+            //       />
+            //     ))
+            //     : null}
+            // </CustomPicker>
+
+
+
+
+          //     <CustomDrop
+          //   data={subCategoryItems.map((val)=>val.name)}
+          //   defaultButtonText={'subCat'}
+          //   onSelect={(itemValue, itemIndex) => {
+          //     setJobSubCategory(itemValue);
+          //     jobObj.jobSubCategory = itemValue;
+          //     dispatch(setJobPost(jobObj));
+          //   }}
+          // />
+          null
           )}
 
           {/* Added here */}
 
-          <CustomPicker
+          {/* <CustomPicker
             pickerTitleStyle={{
               color:
                 reqLang == 0 && missingField == true
@@ -630,9 +677,33 @@ const JobPosted = ({ navigation }) => {
                 value={val.value}
               />
             ))}
-          </CustomPicker>
+          </CustomPicker> */}
+           <View style={{marginLeft:5}}>
+           <Text style={{color:colors.primaryColor,fontSize:16,fontWeight:"bold"}}>{LocalStrings.Language}</Text>
+          </View>
+          <CustomDrop
+            data={['English Only', 'Spanish Only', 'Bilingual']}
+            defaultButtonText={'Language'}
+            onSelect={(itemValue, itemIndex) => {
+              setReqLang(itemValue);
+              console.log('hasbxhka', jobObj.requiredLanguage = itemValue);
+              dispatch(setJobPost(jobObj));
+            }}
+          />
+ <View style={{marginLeft:5}}>
+           <Text style={{color:colors.primaryColor,fontSize:16,fontWeight:"bold"}}> {LocalStrings.Experience} </Text>
+          </View>
+          <CustomDrop
+            data={['Less than a year', '1 Year', '2 Year or more']}
+            defaultButtonText={'Experince'}
+            onSelect={(itemValue, itemIndex) => {
+              setReqExp(itemValue);
+              console.log('hasbxhka', jobObj.reqExp = itemValue);
+              dispatch(setJobPost(jobObj));
+            }}
+          />
 
-          <CustomPicker
+          {/* <CustomPicker
             pickerTitleStyle={{
               color:
                 reqExp == 0 && missingField == true
@@ -654,391 +725,429 @@ const JobPosted = ({ navigation }) => {
                 <Picker.Item style={{ fontSize: 14 }} key={index} label={val.name} value={val.category_id_decode} />
               )) 
             }  */}
-            {jobExperience.map((val, index) => (
-              <Picker.Item
-                style={{ fontSize: 14 }}
-                key={index}
-                label={val.value}
-                value={val.value}
-              />
-            ))}
-          </CustomPicker>
+          {/* {jobExperience.map((val, index) => (
+            <Picker.Item
+              style={{ fontSize: 14 }}
+              key={index}
+              label={val.value}
+              value={val.value}
+            />
+          ))}
+        </CustomPicker> */} 
 
-          {/* End Editing */}
+        {/* End Editing */}
 
-          <Text style={styles.uploadImageText}>{LocalStrings.UploadImage}</Text>
+        <Text style={styles.uploadImageText}>{LocalStrings.UploadImage}</Text>
 
+        <View
+          style={{
+            flexDirection: "row",
+            marginTop: 4,
+            justifyContent: "space-between",
+          }}
+        >
           <View
-            style={{
-              flexDirection: "row",
-              marginTop: 4,
-              justifyContent: "space-between",
-            }}
+            style={
+              imageUrl == ""
+                ? styles.EmptyUploadImageContainer
+                : styles.UploadImageContainer
+            }
           >
-            <View
+            <MaterialIcons
+              name="cloud-upload"
+              size={18}
+              color={colors.gray}
+            />
+            <Text
               style={
                 imageUrl == ""
-                  ? styles.EmptyUploadImageContainer
-                  : styles.UploadImageContainer
+                  ? styles.emptyUploadImageText
+                  : { color: colors.gray, opacity: 0.7 }
               }
             >
-              <MaterialIcons
-                name="cloud-upload"
-                size={18}
-                color={colors.gray}
+              Upload Image
+            </Text>
+            {imageUrl != "" ? (
+              <Image
+                source={{ uri: imageUrl }}
+                style={{ height: 40, width: 50, borderRadius: 5 }}
               />
-              <Text
-                style={
-                  imageUrl == ""
-                    ? styles.emptyUploadImageText
-                    : { color: colors.gray, opacity: 0.7 }
-                }
-              >
-                Upload Image
-              </Text>
-              {imageUrl != "" ? (
-                <Image
-                  source={{ uri: imageUrl }}
-                  style={{ height: 40, width: 50, borderRadius: 5 }}
-                />
-              ) : null}
-            </View>
-
-            <Button
-              style={{
-                backgroundColor: colors.primaryColor,
-                padding: 5,
-                borderRadius: 15,
-                height: Dimensions.get("window").height * 0.065,
-              }}
-              titleStyle={{ marginLeft: 5 }}
-              iconName={"cloud-upload"}
-              title={LocalStrings.Upload}
-              onPress={() => {
-                let options;
-                launchImageLibrary(
-                  (options = {
-                    mediaType: "photo",
-                    maxHeight: 500,
-                    maxWidth: 500,
-                    //includeBase64: true
-                  }),
-                  (response) => {
-                    //console.log('Response:',response)
-
-                    if (response.didCancel) {
-                      // console.log('User cancelled image picker');
-                      setImageUrl("");
-                    } else if (response.errorMessage) {
-                      console.log("Error:", response.errorMessage);
-                    } else {
-                      const source = response?.assets[0].uri;
-                      //const source = { uri: response.assets[0].uri }
-                      setImageUrl(source);
-                      //setImageFileName(response.assets[0].fileName)
-                    }
-                  }
-                );
-              }}
-            />
+            ) : null}
           </View>
 
-          <InputField
-            textStyle={{
-              color:
-                jobDescription == "" && missingField == true
-                  ? "red"
-                  : colors.primaryColor,
-            }}
-            title={LocalStrings.Description}
-            placeholder="Job Description"
-            maxLength={250}
-            multiline={true}
-            inputFieldStyle={{
-              alignItems: "flex-start",
-              height: Dimensions.get("window").height * 0.2,
-            }}
-            value={jobDescription}
-            onChangeText={(val) => {
-              setJobDescription(val);
-              jobObj.jobDescription = val;
-              dispatch(setJobPost(jobObj));
-            }}
-          />
-          <Text
+          <Button
             style={{
-              alignSelf: "flex-end",
-              color: colors.darkGray,
-              fontWeight: "bold",
-              fontSize: 12,
+              backgroundColor: colors.primaryColor,
+              padding: 5,
+              borderRadius: 15,
+              height: Dimensions.get("window").height * 0.065,
             }}
-          >
-            {`${jobDescription.length} / 250 Characters`}
-          </Text>
+            titleStyle={{ marginLeft: 5 }}
+            iconName={"cloud-upload"}
+            title={LocalStrings.Upload}
+            onPress={() => {
+              let options;
+              launchImageLibrary(
+                (options = {
+                  mediaType: "photo",
+                  maxHeight: 500,
+                  maxWidth: 500,
+                  //includeBase64: true
+                }),
+                (response) => {
+                  //console.log('Response:',response)
 
-          {/* ---------------------------------Map------------------------------- */}
-
-          <Text style={styles.title}>{LocalStrings.Location}</Text>
-          <View style={styles.MapView}>
-            <MapView
-              ref={MapRef}
-              region={myDirection}
-              showsUserLocation={true}
-              maxZoomLevel={20}
-              onRegionChangeComplete={changeValue}
-              style={[StyleSheet.absoluteFill, { width: "100%" }]}
-            >
-              <Marker
-                draggable
-                onDragEnd={(e) => {
-                  let lat = e.nativeEvent.coordinate.latitude;
-                  let long = e.nativeEvent.coordinate.longitude;
-                  setMyDirection({
-                    latitude: lat,
-                    longitude: long,
-                    latitudeDelta: 0.0922,
-                    longitudeDelta: 0.0421,
-                  });
-                  // getEstimatedTimeOfArrival(lat, long)
-                  // console.log("Latitude: ", lat)
-                  // console.log("Longitude: ", long)
-                }}
-                coordinate={myDirection}
-                title={"My Location"}
-                description={"Satellite Town Gujranwala"}
-              >
-                <Ionicons name="location-sharp" size={30} color="red" />
-              </Marker>
-            </MapView>
-          </View>
-          <CustomPicker
-            pickerContainerStyle={{ marginTop: 10 }}
-            label="Select No. Of Employees"
-            pickerTitle={LocalStrings.NoOfEmployees}
-            selectedValue={jobPostNos}
-            onValueChange={(itemValue, itemIndex) => {
-              setJobPostNos(itemValue);
-              jobObj.noOfEmployees = itemValue;
-              dispatch(setJobPost(jobObj));
-            }}
-          >
-            <Picker.Item label={"1"} value={"1"} style={{ fontSize: 14 }} />
-            <Picker.Item label={"2"} value={"2"} style={{ fontSize: 14 }} />
-            <Picker.Item label={"3"} value={"3"} style={{ fontSize: 14 }} />
-            <Picker.Item label={"4"} value={"4"} style={{ fontSize: 14 }} />
-            <Picker.Item label={"5"} value={"5"} style={{ fontSize: 14 }} />
-            <Picker.Item label={"6"} value={"6"} style={{ fontSize: 14 }} />
-            <Picker.Item label={"7"} value={"7"} style={{ fontSize: 14 }} />
-            <Picker.Item label={"8"} value={"8"} style={{ fontSize: 14 }} />
-            <Picker.Item label={"9"} value={"9"} style={{ fontSize: 14 }} />
-            <Picker.Item label={"10"} value={"10"} style={{ fontSize: 14 }} />
-            <Picker.Item
-              label={"1 - 15"}
-              value={"11"}
-              style={{ fontSize: 14 }}
-            />
-            <Picker.Item
-              label={"1 - 20"}
-              value={"12"}
-              style={{ fontSize: 14 }}
-            />
-            <Picker.Item
-              label={"1 - 25"}
-              value={"13"}
-              style={{ fontSize: 14 }}
-            />
-            <Picker.Item
-              label={"1 - 30"}
-              value={"14"}
-              style={{ fontSize: 14 }}
-            />
-            <Picker.Item
-              label={"1 - 35"}
-              value={"15"}
-              style={{ fontSize: 14 }}
-            />
-            <Picker.Item
-              label={"1 - 40"}
-              value={"16"}
-              style={{ fontSize: 14 }}
-            />
-            <Picker.Item
-              label={"1 - 45"}
-              value={"17"}
-              style={{ fontSize: 14 }}
-            />
-            <Picker.Item
-              label={"1 - 50"}
-              value={"18"}
-              style={{ fontSize: 14 }}
-            />
-            <Picker.Item label={"50+"} value={"18"} style={{ fontSize: 14 }} />
-          </CustomPicker>
-
-          <InputField
-            inputFieldStyle={
-              address?.length > 35 && {
-                height: Dimensions.get("window").height * 0.078,
-              }
-            }
-            textStyle={{
-              color:
-                address == "" && missingField == true
-                  ? "red"
-                  : colors.primaryColor,
-            }}
-            title="Address"
-            placeholder="Address"
-            iconName="location-sharp"
-            maxLength={100}
-            multiline={address?.length > 35 ? true : false}
-            value={address}
-            onChangeText={(val) => {
-              setAddress(val);
-              jobObj.address = val;
-              dispatch(setJobPost(jobObj));
+                  if (response.didCancel) {
+                    // console.log('User cancelled image picker');
+                    setImageUrl("");
+                  } else if (response.errorMessage) {
+                    console.log("Error:", response.errorMessage);
+                  } else {
+                    const source = response?.assets[0].uri;
+                    //const source = { uri: response.assets[0].uri }
+                    setImageUrl(source);
+                    //setImageFileName(response.assets[0].fileName)
+                  }
+                }
+              );
             }}
           />
+        </View>
 
-          <StatePicker
-            pickerTitleStyle={{
-              color:
-                statePicker == 0 && missingField == true
-                  ? "red"
-                  : colors.primaryColor,
+        <InputField
+          textStyle={{
+            color:
+              jobDescription == "" && missingField == true
+                ? "red"
+                : colors.primaryColor,
+          }}
+          title={LocalStrings.Description}
+          placeholder="Job Description"
+          maxLength={250}
+          multiline={true}
+          inputFieldStyle={{
+            alignItems: "flex-start",
+            height: Dimensions.get("window").height * 0.2,
+          }}
+          value={jobDescription}
+          onChangeText={(val) => {
+            setJobDescription(val);
+            jobObj.jobDescription = val;
+            dispatch(setJobPost(jobObj));
+          }}
+        />
+        <Text
+          style={{
+            alignSelf: "flex-end",
+            color: colors.darkGray,
+            fontWeight: "bold",
+            fontSize: 12,
+          }}
+        >
+          {`${jobDescription.length} / 250 Characters`}
+        </Text>
+
+        {/* ---------------------------------Map------------------------------- */}
+
+        <Text style={styles.title}>{LocalStrings.Location}</Text>
+        <View style={styles.MapView}>
+          <MapView
+            ref={MapRef}
+            region={myDirection}
+            showsUserLocation={true}
+            maxZoomLevel={20}
+            onRegionChangeComplete={changeValue}
+            style={[StyleSheet.absoluteFill, { width: "100%" }]}
+          >
+            <Marker
+              draggable
+              onDragEnd={(e) => {
+                let lat = e.nativeEvent.coordinate.latitude;
+                let long = e.nativeEvent.coordinate.longitude;
+                setMyDirection({
+                  latitude: lat,
+                  longitude: long,
+                  latitudeDelta: 0.0922,
+                  longitudeDelta: 0.0421,
+                });
+                // getEstimatedTimeOfArrival(lat, long)
+                // console.log("Latitude: ", lat)
+                // console.log("Longitude: ", long)
+              }}
+              coordinate={myDirection}
+              title={"My Location"}
+              description={"Satellite Town Gujranwala"}
+            >
+              <Ionicons name="location-sharp" size={30} color="red" />
+            </Marker>
+          </MapView>
+        </View>
+        {/* <CustomPicker
+          pickerContainerStyle={{ marginTop: 10 }}
+          label="Select No. Of Employees"
+          pickerTitle={LocalStrings.NoOfEmployees}
+          selectedValue={jobPostNos}
+          onValueChange={(itemValue, itemIndex) => {
+            setJobPostNos(itemValue);
+            jobObj.noOfEmployees = itemValue;
+            dispatch(setJobPost(jobObj));
+          }}
+        >
+          <Picker.Item label={"1"} value={"1"} style={{ fontSize: 14 }} />
+          <Picker.Item label={"2"} value={"2"} style={{ fontSize: 14 }} />
+          <Picker.Item label={"3"} value={"3"} style={{ fontSize: 14 }} />
+          <Picker.Item label={"4"} value={"4"} style={{ fontSize: 14 }} />
+          <Picker.Item label={"5"} value={"5"} style={{ fontSize: 14 }} />
+          <Picker.Item label={"6"} value={"6"} style={{ fontSize: 14 }} />
+          <Picker.Item label={"7"} value={"7"} style={{ fontSize: 14 }} />
+          <Picker.Item label={"8"} value={"8"} style={{ fontSize: 14 }} />
+          <Picker.Item label={"9"} value={"9"} style={{ fontSize: 14 }} />
+          <Picker.Item label={"10"} value={"10"} style={{ fontSize: 14 }} />
+          <Picker.Item
+            label={"1 - 15"}
+            value={"11"}
+            style={{ fontSize: 14 }}
+          />
+          <Picker.Item
+            label={"1 - 20"}
+            value={"12"}
+            style={{ fontSize: 14 }}
+          />
+          <Picker.Item
+            label={"1 - 25"}
+            value={"13"}
+            style={{ fontSize: 14 }}
+          />
+          <Picker.Item
+            label={"1 - 30"}
+            value={"14"}
+            style={{ fontSize: 14 }}
+          />
+          <Picker.Item
+            label={"1 - 35"}
+            value={"15"}
+            style={{ fontSize: 14 }}
+          />
+          <Picker.Item
+            label={"1 - 40"}
+            value={"16"}
+            style={{ fontSize: 14 }}
+          />
+          <Picker.Item
+            label={"1 - 45"}
+            value={"17"}
+            style={{ fontSize: 14 }}
+          />
+          <Picker.Item
+            label={"1 - 50"}
+            value={"18"}
+            style={{ fontSize: 14 }}
+          />
+          <Picker.Item label={"50+"} value={"18"} style={{ fontSize: 14 }} />
+        </CustomPicker> */}
+        <View style={{marginLeft:5}}>
+           <Text style={{color:colors.primaryColor,fontSize:16,fontWeight:"bold"}}> {LocalStrings.noOfEmployees}</Text>
+          </View>
+         <CustomDrop
+            data={['1','2','3','4','5','6','7','8','9','10','1-15','15-20','20-25','25-30','30-35','35-40','40-45','45-50','50+']}
+            defaultButtonText={'Select No. Of Employees'}
+            onSelect={(itemValue, itemIndex) => {
+              setJobPostNos(itemValue);
+             console.log( 'hasbxhka',jobObj.noOfEmployees  = itemValue);
+              dispatch(setJobPost(jobObj));
             }}
-            pickerContainerStyle={{ marginTop: 10, flex: 0.49 }}
-            items={cityStates}
-            selectedValue={statePicker}
-            onValueChange={(itemValue, itemIndex) => {
+            />
+
+        <InputField
+          inputFieldStyle={
+            address?.length > 35 && {
+              height: Dimensions.get("window").height * 0.078,
+            }
+          }
+          textStyle={{
+            color:
+              address == "" && missingField == true
+                ? "red"
+                : colors.primaryColor,
+          }}
+          title="Address"
+          placeholder="Address"
+          iconName="location-sharp"
+          maxLength={100}
+          multiline={address?.length > 35 ? true : false}
+          value={address}
+          onChangeText={(val) => {
+            setAddress(val);
+            jobObj.address = val;
+            dispatch(setJobPost(jobObj));
+          }}
+        />
+
+        {/* <StatePicker
+          pickerTitleStyle={{
+            color:
+              statePicker == 0 && missingField == true
+                ? "red"
+                : colors.primaryColor,
+          }}
+          pickerContainerStyle={{ marginTop: 10, flex: 0.49 }}
+          items={cityStates}
+          selectedValue={statePicker}
+          onValueChange={(itemValue, itemIndex) => {
+            setStatePicker(itemValue);
+            jobObj.state = itemValue;
+            dispatch(setJobPost(jobObj));
+          }}
+        /> */}
+        <View style={{marginLeft:5}}>
+           <Text style={{color:colors.primaryColor,fontSize:16,fontWeight:"bold"}}>State</Text>
+          </View>
+         <CustomDrop
+            data={statePicker}
+            defaultButtonText={'State'}
+            onSelect={(itemValue, itemIndex) => {
               setStatePicker(itemValue);
               jobObj.state = itemValue;
               dispatch(setJobPost(jobObj));
             }}
-          />
+            />
 
-          <CustomPicker
-            pickerTitleStyle={{
-              color:
-                city == 0 && missingField == true ? "red" : colors.primaryColor,
-            }}
-            pickerContainerStyle={{ marginTop: 10, flex: 0.49 }}
-            label="Select City"
-            pickerTitle={LocalStrings.city}
-            selectedValue={city}
-            onValueChange={(itemValue, itemIndex) => {
+        {/* <CustomPicker
+          pickerTitleStyle={{
+            color:
+              city == 0 && missingField == true ? "red" : colors.primaryColor,
+          }}
+          pickerContainerStyle={{ marginTop: 10, flex: 0.49 }}
+          label="Select City"
+          pickerTitle={LocalStrings.city}
+          selectedValue={city}
+          onValueChange={(itemValue, itemIndex) => {
+            setCity(itemValue);
+            jobObj.city = itemValue;
+            dispatch(setJobPost(jobObj));
+          }}
+        >
+          {cities.length > 0
+            ? cityItems.map((val, index) => (
+              <Picker.Item
+                style={{ fontSize: 14 }}
+                key={index}
+                label={val.city}
+                value={val.city}
+              />
+            ))
+            : null}
+        </CustomPicker> */}
+        <View style={{marginLeft:5}}>
+           <Text style={{color:colors.primaryColor,fontSize:16,fontWeight:"bold"}}>City</Text>
+          </View>
+         <CustomDrop
+            data={cityItems.map((val)=>val.city)}
+            defaultButtonText={'Cites'}
+            onSelect={(itemValue, itemIndex) => {
               setCity(itemValue);
               jobObj.city = itemValue;
               dispatch(setJobPost(jobObj));
             }}
-          >
-            {cities.length > 0
-              ? cityItems.map((val, index) => (
-                  <Picker.Item
-                    style={{ fontSize: 14 }}
-                    key={index}
-                    label={val.city}
-                    value={val.city}
-                  />
-                ))
-              : null}
-          </CustomPicker>
-
-          <InputField
-            textStyle={{
-              color:
-                zipCode == "" && missingField == true
-                  ? "red"
-                  : colors.primaryColor,
-            }}
-            keyboardType={"number-pad"}
-            maxLength={5}
-            title={LocalStrings.zipCode}
-            placeholder="Zip Code"
-            value={zipCode}
-            onChangeText={(val) => {
-              setZipCode(val);
-              jobObj.zipCode = val;
-              dispatch(setJobPost(jobObj));
-            }}
-          />
-
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              marginTop: 5,
-              marginLeft: 7,
-            }}
-          >
-            <TouchableOpacity
-              onPress={() =>
-                Linking.openURL(
-                  `https://www.google.com/maps/search/'${address}, ${city}, ${statePicker}, ${zipCode}`
-                ).catch((err) => console.error("An error occurred", err))
-              }
-            >
-              <Text style={{ fontSize: 12, color: colors.buttonColor }}>
-                {LocalStrings.ViewfullAddress}
-              </Text>
-            </TouchableOpacity>
-
-            <MaterialIcons
-              name="location-city"
-              size={20}
-              color={colors.primaryColor}
-              style={{ marginLeft: 3 }}
             />
-          </View>
-        </View>
 
-        <View style={styles.bottomButtonContainer}>
-          <Button
-            style={{ ...styles.button, backgroundColor: colors.primaryColor }}
-            title={LocalStrings.Post}
-            onPress={() => {
-              if (
-                jobTitle == "" ||
-                hourlyPay == "" ||
-                jobDuration == 0 ||
-                jobCategory == 0 ||
-                jobDescription == "" ||
-                address == "" ||
-                statePicker == 0 ||
-                city == 0 ||
-                zipCode == ""
-              ) {
-                setMissinFieldModal(true);
-              } else {
-                jobPosted();
-              }
-            }}
-          />
-
-          <Button
-            style={styles.button}
-            title={LocalStrings.Cancel}
-            onPress={() => {
-              navigation.navigate(Constants.screen.EmployerDashboard);
-              onCancel();
-            }}
-          />
-        </View>
-      </ImageBackground>
-
-      {isModal && (
-        <CustomModal
-          message={"You have an unposted job."}
-          isVisible={isModal}
-          imageSource={require("../../../assets/diagnostic.png")}
-          onPressYes={() => {
-            setisModal(false);
-            navigation.navigate(Constants.screen.Draft);
+        <InputField
+          textStyle={{
+            color:
+              zipCode == "" && missingField == true
+                ? "red"
+                : colors.primaryColor,
           }}
-          onPressNo={() => setisModal(false)}
+          keyboardType={"number-pad"}
+          maxLength={5}
+          title={LocalStrings.zipCode}
+          placeholder="Zip Code"
+          value={zipCode}
+          onChangeText={(val) => {
+            setZipCode(val);
+            jobObj.zipCode = val;
+            dispatch(setJobPost(jobObj));
+          }}
         />
-      )}
-    </ScrollView>
+
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            marginTop: 5,
+            marginLeft: 7,
+          }}
+        >
+          <TouchableOpacity
+            onPress={() =>
+              Linking.openURL(
+                `https://www.google.com/maps/search/'${address}, ${city}, ${statePicker}, ${zipCode}`
+              ).catch((err) => console.error("An error occurred", err))
+            }
+          >
+            <Text style={{ fontSize: 12, color: colors.buttonColor }}>
+              {LocalStrings.ViewfullAddress}
+            </Text>
+          </TouchableOpacity>
+
+          <MaterialIcons
+            name="location-city"
+            size={20}
+            color={colors.primaryColor}
+            style={{ marginLeft: 3 }}
+          />
+        </View>
+      </View>
+
+      <View style={styles.bottomButtonContainer}>
+        <Button
+          style={{ ...styles.button, backgroundColor: colors.primaryColor }}
+          title={LocalStrings.Post}
+          onPress={() => {
+            if (
+              jobTitle == "" ||
+              hourlyPay == "" ||
+              jobDuration == 0 ||
+              jobCategory == 0 ||
+              jobDescription == "" ||
+              address == "" ||
+              statePicker == 0 ||
+              city == 0 ||
+              zipCode == ""
+            ) {
+              setMissinFieldModal(true);
+            } else {
+              jobPosted();
+            }
+          }}
+        />
+
+        <Button
+          style={styles.button}
+          title={LocalStrings.Cancel}
+          onPress={() => {
+            navigation.navigate(Constants.screen.EmployerDashboard);
+            onCancel();
+          }}
+        />
+      </View>
+    </ImageBackground>
+
+      {
+    isModal && (
+      <CustomModal
+        message={"You have an unposted job."}
+        isVisible={isModal}
+        imageSource={require("../../../assets/diagnostic.png")}
+        onPressYes={() => {
+          setisModal(false);
+          navigation.navigate(Constants.screen.Draft);
+        }}
+        onPressNo={() => setisModal(false)}
+      />
+    )
+  }
+    </ScrollView >
   );
 };
 
