@@ -4,7 +4,7 @@
             "outputFile": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
-                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/bcc33a4622798dd324d1a43aa471d919/jetified-play-services-wallet-18.1.3/res/values-en-rSG/values.xml",
+                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/6ba1ef1e9d3aa42f21c4404375ff9217/jetified-play-services-wallet-19.1.0/res/values-en-rSG/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

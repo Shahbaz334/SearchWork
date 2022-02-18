@@ -125,24 +125,24 @@
     <string name="close">閉じる</string>
     <string msgid="406453423630273620" name="close_drawer">"ナビゲーションメニューを閉じる"</string>
     <string msgid="7573152094250666567" name="close_sheet">"シートを閉じる"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"有効にする"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行には、Google Play開発者サービスの有効化が必要です。"</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play開発者サービスの有効化"</string>
-    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"インストール"</string>
-    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いのデバイスにはインストールされていません。"</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play開発者サービスの入手"</string>
-    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play 開発者サービスの利用"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play開発者サービスのエラー"</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」で Google Play 開発者サービスに問題が発生しています。もう一度お試しください。"</string>
-    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いのデバイスではサポートされていません。"</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"更新"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスの更新が必要です。"</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play開発者サービスの更新"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスが必要ですが、このサービスは現在更新中です。"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play開発者サービスの新しいバージョンが必要です。まもなく自動更新されます。"</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"スマートフォンで開く"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"ログイン"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleにログイン"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">有効にする</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$sの実行には、Google Play開発者サービスの有効化が必要です。</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play開発者サービスの有効化</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">インストール</string>
+    <string name="common_google_play_services_install_text">「%1$s」の実行には Google Play 開発者サービスが必要ですが、お使いのデバイスにはインストールされていません。</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play開発者サービスの入手</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play 開発者サービスの利用</string>
+    <string name="common_google_play_services_notification_ticker">Google Play開発者サービスのエラー</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」で Google Play 開発者サービスに問題が発生しています。もう一度お試しください。</string>
+    <string name="common_google_play_services_unsupported_text">「%1$s」の実行には Google Play 開発者サービスが必要ですが、お使いのデバイスではサポートされていません。</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">更新</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$sの実行にはGoogle Play開発者サービスの更新が必要です。</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play開発者サービスの更新</string>
+    <string name="common_google_play_services_updating_text">%1$sの実行にはGoogle Play開発者サービスが必要ですが、このサービスは現在更新中です。</string>
+    <string name="common_google_play_services_wear_update_text">Google Play開発者サービスの新しいバージョンが必要です。まもなく自動更新されます。</string>
+    <string name="common_open_on_phone">スマートフォンで開く</string>
+    <string name="common_signin_button_text">ログイン</string>
+    <string name="common_signin_button_text_long">Googleにログイン</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"リンクをクリップボードにコピーしました"</string>
     <string msgid="8038256446254964252" name="default_error_message">"入力値が無効です"</string>
     <string name="delete_payment_method">支払い方法を削除する</string>
@@ -151,6 +151,7 @@
     <string name="edit">編集</string>
     <string name="email">メールアドレス</string>
     <string name="email_is_invalid">メールアドレスが無効です。</string>
+    <string name="eps_bank">EPS Bank</string>
     <string name="error_icon_content_description">エラー</string>
     <string name="expiry_date_hint">MM/YY</string>
     <string name="expiry_label_short">有効期限</string>
@@ -158,12 +159,14 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"リンクをコピー"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ブラウザで開く"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"リンクの共有"</string>
+    <string name="form_label_optional">%s (オプション)</string>
     <string name="fpx_bank_offline">%s - オフライン</string>
     <string name="iban_incomplete">入力した IBAN に不備があります。</string>
     <string name="iban_invalid">入力した IBAN が無効です。</string>
     <string name="iban_invalid_country">入力した IBAN が無効です。\"%s\" はサポートされている国コードではありません。</string>
     <string name="iban_invalid_start">IBANコードの先頭には 2 文字の国コードを入力してください。</string>
     <string name="icon_content_description">ダイアログ アイコン</string>
+    <string name="ideal_bank">iDEAL銀行</string>
     <string msgid="6827826412747255547" name="in_progress">"処理しています"</string>
     <string name="incomplete_expiry_date">カードの有効期限の日付に不備があります。</string>
     <string msgid="2486394087603402002" name="indeterminate">"オンでもオフでもありません"</string>
@@ -174,6 +177,8 @@
     <string name="invalid_shipping_information">配送先住所が無効です</string>
     <string name="invalid_zip">郵便番号の入力に不備があります。</string>
     <string name="item_view_role_description">タブ</string>
+    <string name="klarna_buy_now_pay_later">Klarna で後払いします。</string>
+    <string name="klarna_pay_later">Klarna での後払いにします。</string>
     <string name="material_clock_toggle_content_description">午前または午後を選択</string>
     <string name="material_hour_selection">時刻を選択してください</string>
     <string name="material_hour_suffix">%1$s時</string>
@@ -223,22 +228,25 @@
     <string msgid="6610465462668679431" name="not_selected">"未選択"</string>
     <string msgid="875452955155264703" name="off">"オフ"</string>
     <string msgid="8655164131929253426" name="on">"オン"</string>
+    <string name="p24_bank">Przelewy24 銀行</string>
     <string name="password_toggle_content_description">パスワードを表示</string>
     <string name="payment_method_add_new_card">新しいカードを追加...</string>
     <string name="payment_method_add_new_fpx">銀行口座を選択 (FPX)...</string>
     <string name="price_free">無料</string>
     <string name="remove">削除</string>
     <string name="removed">%s が削除されました</string>
+    <string name="save_for_future_payments_with_merchant_name">今後の %s の支払いのために保存する</string>
     <string msgid="6264217191555673260" name="search_menu_title">"検索"</string>
     <string name="secure_checkout">安全なチェックアウト</string>
     <string msgid="6043586758067023" name="selected">"選択済み"</string>
+    <string name="sepa_mandate">支払い情報を提供し、この支払いを確定することで、お客様は (A) %s および決済サービスプロバイダーである Stripe がお客様の銀行に口座引き落としの指図を送り、(B) 銀行がこの指図に従ってお客様の口座から引き落としを行うことを承認することになります。お客様の権利の一部として、銀行との契約条件に基づき、お客様は銀行からの返金を受ける権利を有します。返金は口座の引き落とし日から 8 週間以内に請求する必要があります。お客様の権利は、銀行から得られる明細書内で説明されています。お客様は今後の引き落としに関する通知を引き落としの実行日の 2 日前までに受け取ることに同意するものとします。</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="stripe_3ds2_bzv_issuer_image_description">発行会社のイメージ</string>
     <string name="stripe_3ds2_bzv_payment_system_image_description">決済システムのイメージ</string>
     <string name="stripe_3ds2_czv_whitelist_no_label">いいえ</string>
     <string name="stripe_3ds2_czv_whitelist_yes_label">はい</string>
     <string name="stripe_3ds2_hzv_cancel_label">キャンセル</string>
-    <string name="stripe_3ds2_hzv_header_label">セキュアな Checkout</string>
+    <string name="stripe_3ds2_hzv_header_label">セキュアなチェックアウト</string>
     <string name="stripe_3ds2_processing">処理中\u2026</string>
     <string name="stripe_failure_connection_error">決済代行会社への接続中に問題が発生しました。インターネット接続をご確認の上、もう一度お試しください。</string>
     <string name="stripe_failure_reason_authentication">お客様の支払い方法を認証できませんでした。別の支払い方法を選択してもう一度お試しください。</string>
@@ -251,13 +259,9 @@
     <string name="stripe_paymentsheet_back">戻る</string>
     <string name="stripe_paymentsheet_close">閉じる</string>
     <string name="stripe_paymentsheet_continue_button_label">続ける</string>
-    <string name="stripe_paymentsheet_eps_bank">EPS Bank</string>
     <string name="stripe_paymentsheet_expiration_date_hint">月 / 年</string>
-    <string name="stripe_paymentsheet_form_label_optional">%s (オプション)</string>
-    <string name="stripe_paymentsheet_ideal_bank">iDEAL銀行</string>
     <string name="stripe_paymentsheet_or_pay_using">または別の方法で支払う</string>
     <string name="stripe_paymentsheet_or_pay_with_card">または、カードで支払う</string>
-    <string name="stripe_paymentsheet_p24_bank">Przelewy24 銀行</string>
     <string name="stripe_paymentsheet_pay_button_amount">%s を支払う</string>
     <string name="stripe_paymentsheet_pay_button_label">支払う: </string>
     <string name="stripe_paymentsheet_payment_method_afterpay_clearpay">Afterpay</string>
@@ -268,7 +272,6 @@
     <string name="stripe_paymentsheet_save_for_future_payments">今後の支払いのために保存する</string>
     <string name="stripe_paymentsheet_save_this_card_with_merchant_name">今後の %s の支払いのためにこのカードを保存する</string>
     <string name="stripe_paymentsheet_select_payment_method">支払い方法を選択してください</string>
-    <string name="stripe_paymentsheet_sepa_mandate">支払い情報を提供し、この支払いを確定することで、お客様は (A) %s および決済サービスプロバイダーである Stripe がお客様の銀行に口座引き落としの指図を送り、(B) 銀行がこの指図に従ってお客様の口座から引き落としを行うことを承認することになります。お客様の権利の一部として、銀行との契約条件に基づき、お客様は銀行からの返金を受ける権利を有します。返金は口座の引き落とし日から 8 週間以内に請求する必要があります。お客様の権利は、銀行から得られる明細書内で説明されています。お客様は今後の引き落としに関する通知を引き落としの実行日の 2 日前までに受け取ることに同意するものとします。</string>
     <string name="stripe_paymentsheet_setup_button_label">設定</string>
     <string name="stripe_paymentsheet_total_amount">合計: %s</string>
     <string name="stripe_verify_your_payment">支払いの確認</string>

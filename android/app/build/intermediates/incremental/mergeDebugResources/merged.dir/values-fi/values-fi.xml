@@ -125,24 +125,24 @@
     <string name="close">Sulje</string>
     <string msgid="406453423630273620" name="close_drawer">"Sulje navigointivalikko"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Sulje taulukko"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Ota käyttöön"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi, ellet ota Google Play Palveluita käyttöön."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Ota Google Play Palvelut käyttöön"</string>
-    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Asenna"</string>
-    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi ilman Google Play Palveluita, jotka puuttuvat laitteeltasi."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Asenna Google Play Palvelut"</string>
-    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play Palveluiden saatavuus"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Virhe Google Play -palveluissa"</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"Sovelluksella <ns1:g id="APP_NAME">%1$s</ns1:g> on ongelmia Google Play Palveluiden kanssa. Yritä uudelleen."</string>
-    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi ilman Google Play Palveluita, joita laitteesi ei tue."</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Päivitä"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi, ellet päivitä Google Play Palveluita."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Päivitä Google Play Palvelut"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ei toimi ilman Google Play Palveluita, joita päivitetään tällä hetkellä."</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Uusi Google Play Palveluiden versio tarvitaan. Se päivittyy pian."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Avaa puhelimessa"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Kirjaudu sisään"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Kirjaudu Google-tilille"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Ota käyttöön</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s ei toimi, ellet ota Google Play Palveluita käyttöön.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Ota Google Play Palvelut käyttöön</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Asenna</string>
+    <string name="common_google_play_services_install_text">%1$s ei toimi ilman Google Play Palveluita, jotka puuttuvat laitteeltasi.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Asenna Google Play Palvelut</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play Palveluiden saatavuus</string>
+    <string name="common_google_play_services_notification_ticker">Virhe Google Play -palveluissa</string>
+    <string name="common_google_play_services_unknown_issue">Sovelluksella %1$s on ongelmia Google Play Palveluiden kanssa. Yritä uudelleen.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ei toimi ilman Google Play Palveluita, joita laitteesi ei tue.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Päivitä</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s ei toimi, ellet päivitä Google Play Palveluita.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Päivitä Google Play Palvelut</string>
+    <string name="common_google_play_services_updating_text">%1$s ei toimi ilman Google Play Palveluita, joita päivitetään tällä hetkellä.</string>
+    <string name="common_google_play_services_wear_update_text">Uusi Google Play Palveluiden versio tarvitaan. Se päivittyy pian.</string>
+    <string name="common_open_on_phone">Avaa puhelimessa</string>
+    <string name="common_signin_button_text">Kirjaudu sisään</string>
+    <string name="common_signin_button_text_long">Kirjaudu Google-tilille</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Linkki kopioitu leikepöydälle"</string>
     <string msgid="8038256446254964252" name="default_error_message">"Virheellinen syöte"</string>
     <string name="delete_payment_method">Poista maksutapa</string>
@@ -151,6 +151,7 @@
     <string name="edit">Muokkaa</string>
     <string name="email">Sähköposti</string>
     <string name="email_is_invalid">Sähköposti on virheellinen.</string>
+    <string name="eps_bank">EPS-pankki</string>
     <string name="error_icon_content_description">Virhe</string>
     <string name="expiry_date_hint">KK/VV</string>
     <string name="expiry_label_short">Vanheneminen</string>
@@ -158,12 +159,14 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopioi linkki"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Avaa selaimessa"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Jaa linkki"</string>
+    <string name="form_label_optional">%s (valinnainen)</string>
     <string name="fpx_bank_offline">%s - Offline-tilassa</string>
     <string name="iban_incomplete">IBAN on puutteellinen.</string>
     <string name="iban_invalid">Antamasi IBAN on virheellinen.</string>
     <string name="iban_invalid_country">Antamasi IBAN on virheellinen, \"%s\" ei ole tuettu maakoodi.</string>
     <string name="iban_invalid_start">IBAN-tilinumero alkaa kaksikirjaimisella maakoodilla.</string>
     <string name="icon_content_description">Valintaikkunan kuvake</string>
+    <string name="ideal_bank">iDEAL-pankki</string>
     <string msgid="6827826412747255547" name="in_progress">"Kesken"</string>
     <string name="incomplete_expiry_date">Kortin voimassaoloaika on puutteellinen.</string>
     <string msgid="2486394087603402002" name="indeterminate">"Ei valittu eikä valitsematta"</string>
@@ -174,6 +177,8 @@
     <string name="invalid_shipping_information">Toimitusosoite ei kelpaa</string>
     <string name="invalid_zip">Postinumero on puutteellinen.</string>
     <string name="item_view_role_description">Välilehti</string>
+    <string name="klarna_buy_now_pay_later">Osta nyt tai maksa myöhemmin Klarnalla.</string>
+    <string name="klarna_pay_later">Maksa myöhemmin Klarnalla.</string>
     <string name="material_clock_toggle_content_description">Valitse AP tai IP</string>
     <string name="material_hour_selection">Valitse tunti</string>
     <string name="material_hour_suffix">klo %1$s</string>
@@ -202,7 +207,7 @@
     <string name="mtrl_picker_invalid_format_use">Käytä muotoa %1$s</string>
     <string name="mtrl_picker_invalid_range">Virheellinen alue</string>
     <string name="mtrl_picker_navigate_to_year_description">Siirry vuoteen %1$s</string>
-    <string name="mtrl_picker_out_of_range">Katvealueella: %1$s</string>
+    <string name="mtrl_picker_out_of_range">Aikavälin ulkop.: %1$s</string>
     <string name="mtrl_picker_range_header_only_end_selected">Alkamispäivä – %1$s</string>
     <string name="mtrl_picker_range_header_only_start_selected">%1$s – päättymispäivä</string>
     <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
@@ -223,15 +228,18 @@
     <string msgid="6610465462668679431" name="not_selected">"Ei valittu"</string>
     <string msgid="875452955155264703" name="off">"Pois"</string>
     <string msgid="8655164131929253426" name="on">"Päällä"</string>
+    <string name="p24_bank">Przelewy24 Bank</string>
     <string name="password_toggle_content_description">Näytä salasana</string>
     <string name="payment_method_add_new_card">Lisää uusi kortti...</string>
     <string name="payment_method_add_new_fpx">Valitse pankkitili (FPX)...</string>
     <string name="price_free">Maksuton</string>
     <string name="remove">Poista</string>
     <string name="removed">Poistettu %s</string>
+    <string name="save_for_future_payments_with_merchant_name">Tallenna tulevia maksuja (%s) varten</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Haku"</string>
     <string name="secure_checkout">Turvallinen maksu</string>
     <string msgid="6043586758067023" name="selected">"Valittu"</string>
+    <string name="sepa_mandate">Antamalla maksutiedot ja vahvistamalla tämän maksun, valtuutat (A) %s ja Stripen, maksupalvelun tarjoajamme, lähettämään ohjeita pankillesi tilisi veloittamiseksi ja (B) pankkisi veloittamaan tiliäsi annettujen ohjeiden mukaisesti. Oikeuksiesi mukaisesti olet oikeutettu maksun palautukseen pankiltasi heidän kanssaan tekemäsi sopimuksen mukaisesti. Maksun palautus on lunastettava kahdeksan viikon kuluessa tilisi veloituksesta. Oikeutesi kerrotaan lausunnossa, jonka voit hankkia pankiltasi. Hyväksyt vastaanottamaan ilmoituksia tulevista veloituksista kaksi päivää ennen niiden tapahtumista.</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="stripe_3ds2_bzv_issuer_image_description">Myöntäjän kuva</string>
     <string name="stripe_3ds2_bzv_payment_system_image_description">Maksujärjestelmän kuva</string>
@@ -251,13 +259,9 @@
     <string name="stripe_paymentsheet_back">Takaisin</string>
     <string name="stripe_paymentsheet_close">Sulje</string>
     <string name="stripe_paymentsheet_continue_button_label">Jatka</string>
-    <string name="stripe_paymentsheet_eps_bank">EPS-pankki</string>
     <string name="stripe_paymentsheet_expiration_date_hint">KK/VV</string>
-    <string name="stripe_paymentsheet_form_label_optional">%s (valinnainen)</string>
-    <string name="stripe_paymentsheet_ideal_bank">iDEAL-pankki</string>
     <string name="stripe_paymentsheet_or_pay_using">Tai käytä maksutapaa</string>
     <string name="stripe_paymentsheet_or_pay_with_card">Tai maksa kortilla</string>
-    <string name="stripe_paymentsheet_p24_bank">Przelewy24 Bank</string>
     <string name="stripe_paymentsheet_pay_button_amount">Maksa %s</string>
     <string name="stripe_paymentsheet_pay_button_label">Maksa</string>
     <string name="stripe_paymentsheet_payment_method_afterpay_clearpay">Afterpay</string>
@@ -268,7 +272,6 @@
     <string name="stripe_paymentsheet_save_for_future_payments">Tallenna tulevia maksuja varten</string>
     <string name="stripe_paymentsheet_save_this_card_with_merchant_name">Tallenna tämä kortti tulevia maksuja (%s) varten</string>
     <string name="stripe_paymentsheet_select_payment_method">Valitse maksutapa</string>
-    <string name="stripe_paymentsheet_sepa_mandate">Antamalla maksutiedot ja vahvistamalla tämän maksun, valtuutat (A) %s ja Stripen, maksupalvelun tarjoajamme, lähettämään ohjeita pankillesi tilisi veloittamiseksi ja (B) pankkisi veloittamaan tiliäsi annettujen ohjeiden mukaisesti. Oikeuksiesi mukaisesti olet oikeutettu maksun palautukseen pankiltasi heidän kanssaan tekemäsi sopimuksen mukaisesti. Maksun palautus on lunastettava kahdeksan viikon kuluessa tilisi veloituksesta. Oikeutesi kerrotaan lausunnossa, jonka voit hankkia pankiltasi. Hyväksyt vastaanottamaan ilmoituksia tulevista veloituksista kaksi päivää ennen niiden tapahtumista.</string>
     <string name="stripe_paymentsheet_setup_button_label">Määritä</string>
     <string name="stripe_paymentsheet_total_amount">Yhteensä: %s</string>
     <string name="stripe_verify_your_payment">Vahvista maksu</string>

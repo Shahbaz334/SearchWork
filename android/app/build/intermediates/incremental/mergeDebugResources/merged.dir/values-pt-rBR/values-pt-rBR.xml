@@ -125,24 +125,24 @@
     <string name="close">Fechar</string>
     <string msgid="406453423630273620" name="close_drawer">"Fechar menu de navegação"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Fechar planilha"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Ativar"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> só funciona com o Google Play Services ativado."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Ativar o Google Play Services"</string>
-    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Instalar"</string>
-    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"O app <ns1:g id="APP_NAME">%1$s</ns1:g> não funciona sem o Google Play Services, o qual não está instalado no seu dispositivo."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Instalar o Google Play Services"</string>
-    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Disponibilidade do Google Play Services"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Erro do Google Play Services"</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"O app <ns1:g id="APP_NAME">%1$s</ns1:g> está com problemas com o Google Play Services. Tente novamente."</string>
-    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"O app <ns1:g id="APP_NAME">%1$s</ns1:g> não funciona sem o Google Play Services, o qual não é compatível com seu dispositivo."</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Atualizar"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> só funciona com uma versão atualizada do Google Play Services."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Atualizar o Google Play Services"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> não funciona sem o Google Play Services, o qual está sendo atualizado no momento."</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"É necessária uma nova versão do Google Play Services. Ele será atualizado em breve."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir no smartphone"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Fazer login"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Fazer login com o Google"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Ativar</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s só funciona com o Google Play Services ativado.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Ativar o Google Play Services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Instalar</string>
+    <string name="common_google_play_services_install_text">O app %1$s não funciona sem o Google Play Services, o qual não está instalado no seu dispositivo.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Instalar o Google Play Services</string>
+    <string name="common_google_play_services_notification_channel_name">Disponibilidade do Google Play Services</string>
+    <string name="common_google_play_services_notification_ticker">Erro do Google Play Services</string>
+    <string name="common_google_play_services_unknown_issue">O app %1$s está com problemas com o Google Play Services. Tente novamente.</string>
+    <string name="common_google_play_services_unsupported_text">O app %1$s não funciona sem o Google Play Services, o qual não é compatível com seu dispositivo.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Atualizar</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s só funciona com uma versão atualizada do Google Play Services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Atualizar o Google Play Services</string>
+    <string name="common_google_play_services_updating_text">%1$s não funciona sem o Google Play Services, o qual está sendo atualizado no momento.</string>
+    <string name="common_google_play_services_wear_update_text">É necessária uma nova versão do Google Play Services. Ele será atualizado em breve.</string>
+    <string name="common_open_on_phone">Abrir no smartphone</string>
+    <string name="common_signin_button_text">Fazer login</string>
+    <string name="common_signin_button_text_long">Fazer login com o Google</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Link copiado para a área de transferência"</string>
     <string msgid="8038256446254964252" name="default_error_message">"Entrada inválida"</string>
     <string name="delete_payment_method">Excluir forma de pagamento</string>
@@ -151,6 +151,7 @@
     <string name="edit">Editar</string>
     <string name="email">E-mail</string>
     <string name="email_is_invalid">Seu e-mail é inválido.</string>
+    <string name="eps_bank">Banco EPS</string>
     <string name="error_icon_content_description">Erro</string>
     <string name="expiry_date_hint">MM/AA</string>
     <string name="expiry_label_short">Validade</string>
@@ -158,12 +159,14 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiar link"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Abrir no navegador"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Compartilhar link"</string>
+    <string name="form_label_optional">%s (opcional)</string>
     <string name="fpx_bank_offline">%s – Offline</string>
     <string name="iban_incomplete">O IBAN inserido está incompleto.</string>
     <string name="iban_invalid">O IBAN inserido é inválido.</string>
     <string name="iban_invalid_country">O IBAN inserido é inválido, \"%s\" não foi reconhecido como código de país.</string>
     <string name="iban_invalid_start">Seu IBAN deve começar com um código de país de duas letras.</string>
     <string name="icon_content_description">Ícone de caixa de diálogo</string>
+    <string name="ideal_bank">Banco iDEAL</string>
     <string msgid="6827826412747255547" name="in_progress">"Em andamento"</string>
     <string name="incomplete_expiry_date">Data de validade incompleta.</string>
     <string msgid="2486394087603402002" name="indeterminate">"Nem marcada nem desmarcada"</string>
@@ -174,6 +177,8 @@
     <string name="invalid_shipping_information">Endereço de envio inválido</string>
     <string name="invalid_zip">Código postal incompleto.</string>
     <string name="item_view_role_description">Guia</string>
+    <string name="klarna_buy_now_pay_later">Compre agora ou pague depois com Klarna.</string>
+    <string name="klarna_pay_later">Pagar depois com Klarna.</string>
     <string name="material_clock_toggle_content_description">Selecionar AM ou PM</string>
     <string name="material_hour_selection">Selecionar horário</string>
     <string name="material_hour_suffix">%1$s em ponto</string>
@@ -223,22 +228,25 @@
     <string msgid="6610465462668679431" name="not_selected">"Não selecionado"</string>
     <string msgid="875452955155264703" name="off">"Desativado"</string>
     <string msgid="8655164131929253426" name="on">"Ativado"</string>
+    <string name="p24_bank">Banco Przelewy24</string>
     <string name="password_toggle_content_description">Exibir senha</string>
     <string name="payment_method_add_new_card">Adicionar novo cartão…</string>
     <string name="payment_method_add_new_fpx">Selecionar conta bancária (FPX)…</string>
     <string name="price_free">Grátis</string>
     <string name="remove">Remover</string>
     <string name="removed">Removeu %s</string>
+    <string name="save_for_future_payments_with_merchant_name">Salvar para pagamentos futuros a %s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Pesquisar"</string>
     <string name="secure_checkout">Secure Checkout</string>
     <string msgid="6043586758067023" name="selected">"Selecionado"</string>
+    <string name="sepa_mandate">Ao fornecer seus dados de pagamento e confirmar este pagamento, você autoriza (A) %s e a Stripe, o nosso provedor de serviços de pagamento, a enviar instruções ao seu banco para debitar sua conta e (B) seu banco a debitar sua conta, de acordo com as referidas instruções. Os seus direitos incluem a possibilidade de exigir do banco o reembolso do valor debitado, nos termos e condições acordados com a instituição. O reembolso deve ser solicitado dentro de um prazo de 8 semanas a partir da data do débito na conta. Você concorda em receber notificações de débitos futuros em até 2 dias antes do débito.</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="stripe_3ds2_bzv_issuer_image_description">Imagem do emissor</string>
     <string name="stripe_3ds2_bzv_payment_system_image_description">Imagem do sistema de pagamento</string>
     <string name="stripe_3ds2_czv_whitelist_no_label">Não</string>
     <string name="stripe_3ds2_czv_whitelist_yes_label">Sim</string>
     <string name="stripe_3ds2_hzv_cancel_label">Cancelar</string>
-    <string name="stripe_3ds2_hzv_header_label">Finalização de compra segura</string>
+    <string name="stripe_3ds2_hzv_header_label">Pagamento seguro</string>
     <string name="stripe_3ds2_processing">Processando\u2026</string>
     <string name="stripe_failure_connection_error">Estamos passando por problemas de conexão com nosso provedor de pagamentos. Verifique sua conexão com a Internet e tente novamente.</string>
     <string name="stripe_failure_reason_authentication">Não é possível autenticar sua forma de pagamento. Escolha outra forma de pagamento e tente de novo.</string>
@@ -251,13 +259,9 @@
     <string name="stripe_paymentsheet_back">Voltar</string>
     <string name="stripe_paymentsheet_close">Fechar</string>
     <string name="stripe_paymentsheet_continue_button_label">Continuar</string>
-    <string name="stripe_paymentsheet_eps_bank">Banco EPS</string>
     <string name="stripe_paymentsheet_expiration_date_hint">MM / AA</string>
-    <string name="stripe_paymentsheet_form_label_optional">%s (opcional)</string>
-    <string name="stripe_paymentsheet_ideal_bank">Banco iDEAL</string>
     <string name="stripe_paymentsheet_or_pay_using">Ou pague com</string>
     <string name="stripe_paymentsheet_or_pay_with_card">Ou pagar com cartão</string>
-    <string name="stripe_paymentsheet_p24_bank">Banco Przelewy24</string>
     <string name="stripe_paymentsheet_pay_button_amount">Pagar %s</string>
     <string name="stripe_paymentsheet_pay_button_label">Pagar</string>
     <string name="stripe_paymentsheet_payment_method_afterpay_clearpay">Afterpay</string>
@@ -268,7 +272,6 @@
     <string name="stripe_paymentsheet_save_for_future_payments">Salvar para pagamentos futuros</string>
     <string name="stripe_paymentsheet_save_this_card_with_merchant_name">Salvar este cartão para pagamentos futuros a %s</string>
     <string name="stripe_paymentsheet_select_payment_method">Selecione sua forma de pagamento</string>
-    <string name="stripe_paymentsheet_sepa_mandate">Ao fornecer seus dados de pagamento e confirmar este pagamento, você autoriza (A) %s e a Stripe, o nosso provedor de serviços de pagamento, a enviar instruções ao seu banco para debitar sua conta e (B) seu banco a debitar sua conta, de acordo com as referidas instruções. Os seus direitos incluem a possibilidade de exigir do banco o reembolso do valor debitado, nos termos e condições acordados com a instituição. O reembolso deve ser solicitado dentro de um prazo de 8 semanas a partir da data do débito na conta. Você concorda em receber notificações de débitos futuros em até 2 dias antes do débito.</string>
     <string name="stripe_paymentsheet_setup_button_label">Configurar</string>
     <string name="stripe_paymentsheet_total_amount">Total: %s</string>
     <string name="stripe_verify_your_payment">Verifique seu pagamento</string>

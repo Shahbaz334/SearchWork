@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/9e5685dd1070494713fa00170eb2ea7c/jetified-ui-1.0.4/res/values-pt/values-pt.xml",
+                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/c78a064f2d0273f2e4628580062eee79/jetified-ui-1.0.5/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +35,23 @@
                         "startOffsets": "2843,2938,3139,3553,3636,3735,3826,3913,3985,4140,4317",
                         "endColumns": "94,85,96,82,98,90,86,71,68,75,66",
                         "endOffsets": "2933,3019,3231,3631,3730,3821,3908,3980,4049,4211,4379"
+                    }
+                },
+                {
+                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/753745765b14761375b118fb16e0fda1/core-1.7.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "44",
+                        "startColumns": "4",
+                        "startOffsets": "4216",
+                        "endColumns": "100",
+                        "endOffsets": "4312"
                     }
                 },
                 {
@@ -52,23 +69,6 @@
                         "startOffsets": "3024,3236,3335,3447",
                         "endColumns": "114,98,111,105",
                         "endOffsets": "3134,3330,3442,3548"
-                    }
-                },
-                {
-                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/70bca851df55f7eba40452598bcf59ee/core-1.6.0/res/values-pt/values-pt.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "44",
-                        "startColumns": "4",
-                        "startOffsets": "4216",
-                        "endColumns": "100",
-                        "endOffsets": "4312"
                     }
                 }
             ]

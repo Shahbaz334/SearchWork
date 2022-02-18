@@ -125,24 +125,24 @@
     <string name="close">닫기</string>
     <string msgid="406453423630273620" name="close_drawer">"탐색 메뉴 닫기"</string>
     <string msgid="7573152094250666567" name="close_sheet">"시트 닫기"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"사용 설정"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Google Play 서비스를 사용하도록 설정해야 <ns1:g id="APP_NAME">%1$s</ns1:g>이(가) 작동합니다."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play 서비스 사용"</string>
-    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"설치"</string>
-    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"기기에 Google Play 서비스가 설치되어 있어야 <ns1:g id="APP_NAME">%1$s</ns1:g>이(가) 실행됩니다."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play 서비스 설치"</string>
-    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play 서비스 사용 가능 여부"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play 서비스 오류"</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g>에서 Google Play 서비스를 사용하는 데 문제가 있습니다. 다시 시도하세요."</string>
-    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>은(는) Google Play 서비스 없이는 실행되지 않으나, 기기에서 Google Play 서비스를 지원하지 않습니다."</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"업데이트"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Google Play 서비스를 업데이트해야 <ns1:g id="APP_NAME">%1$s</ns1:g>이(가) 실행됩니다."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play 서비스 업데이트"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"현재 업데이트 중인 Google Play 서비스가 있어야 <ns1:g id="APP_NAME">%1$s</ns1:g>이(가) 실행됩니다."</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"새 버전의 Google Play 서비스가 필요합니다. 곧 자동으로 업데이트됩니다."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"스마트폰에서 열기"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"로그인"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Google 계정으로 로그인"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">사용 설정</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Google Play 서비스를 사용하도록 설정해야 %1$s이(가) 작동합니다.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play 서비스 사용</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">설치</string>
+    <string name="common_google_play_services_install_text">기기에 Google Play 서비스가 설치되어 있어야 %1$s이(가) 실행됩니다.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play 서비스 설치</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play 서비스 사용 가능 여부</string>
+    <string name="common_google_play_services_notification_ticker">Google Play 서비스 오류</string>
+    <string name="common_google_play_services_unknown_issue">%1$s에서 Google Play 서비스를 사용하는 데 문제가 있습니다. 다시 시도하세요.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s은(는) Google Play 서비스 없이는 실행되지 않으나, 기기에서 Google Play 서비스를 지원하지 않습니다.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">업데이트</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Google Play 서비스를 업데이트해야 %1$s이(가) 실행됩니다.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play 서비스 업데이트</string>
+    <string name="common_google_play_services_updating_text">현재 업데이트 중인 Google Play 서비스가 있어야 %1$s이(가) 실행됩니다.</string>
+    <string name="common_google_play_services_wear_update_text">새 버전의 Google Play 서비스가 필요합니다. 곧 자동으로 업데이트됩니다.</string>
+    <string name="common_open_on_phone">스마트폰에서 열기</string>
+    <string name="common_signin_button_text">로그인</string>
+    <string name="common_signin_button_text_long">Google 계정으로 로그인</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"클립보드에 링크 복사됨"</string>
     <string msgid="8038256446254964252" name="default_error_message">"입력이 잘못됨"</string>
     <string name="delete_payment_method">결제 수단 삭제</string>
@@ -151,6 +151,7 @@
     <string name="edit">편집</string>
     <string name="email">이메일</string>
     <string name="email_is_invalid">이메일이 잘못되었습니다.</string>
+    <string name="eps_bank">EPS 은행</string>
     <string name="error_icon_content_description">오류</string>
     <string name="expiry_date_hint">MM/YY</string>
     <string name="expiry_label_short">만료</string>
@@ -158,12 +159,14 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"링크 복사"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"브라우저에서 열기"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"링크 공유"</string>
+    <string name="form_label_optional">%s(선택 사항)</string>
     <string name="fpx_bank_offline">%s - 오프라인</string>
     <string name="iban_incomplete">입력한 IBAN이 불완전합니다.</string>
     <string name="iban_invalid">입력한 IBAN이 잘못되었습니다.</string>
     <string name="iban_invalid_country">입력한 IBAN이 잘못되었습니다. \"%s\"은(는) 지원되는 국가 코드가 아닙니다.</string>
     <string name="iban_invalid_start">IBAN은 두 글자의 국가 코드로 시작해야 합니다.</string>
     <string name="icon_content_description">대화상자 아이콘</string>
+    <string name="ideal_bank">iDEAL 은행</string>
     <string msgid="6827826412747255547" name="in_progress">"진행 중"</string>
     <string name="incomplete_expiry_date">카드의 만료 날짜가 불완전합니다.</string>
     <string msgid="2486394087603402002" name="indeterminate">"선택 또는 선택 해제되지 않음"</string>
@@ -174,6 +177,8 @@
     <string name="invalid_shipping_information">잘못된 배송 주소</string>
     <string name="invalid_zip">우편번호가 불완전합니다.</string>
     <string name="item_view_role_description">탭</string>
+    <string name="klarna_buy_now_pay_later">지금 구매하거나 Klarna로 나중에 결제</string>
+    <string name="klarna_pay_later">Klarna로 나중에 결제</string>
     <string name="material_clock_toggle_content_description">오전 또는 오후를 선택하세요.</string>
     <string name="material_hour_selection">시간 선택</string>
     <string name="material_hour_suffix">%1$s시 정각</string>
@@ -223,15 +228,18 @@
     <string msgid="6610465462668679431" name="not_selected">"선택되지 않음"</string>
     <string msgid="875452955155264703" name="off">"꺼짐"</string>
     <string msgid="8655164131929253426" name="on">"켜짐"</string>
+    <string name="p24_bank">Przelewy24 은행</string>
     <string name="password_toggle_content_description">비밀번호 표시</string>
     <string name="payment_method_add_new_card">새 카드 추가…</string>
     <string name="payment_method_add_new_fpx">은행 계좌 선택(FPX)…</string>
     <string name="price_free">무료</string>
     <string name="remove">제거</string>
     <string name="removed">%s 제거됨</string>
+    <string name="save_for_future_payments_with_merchant_name">향후 %s 결제에 사용하도록 저장</string>
     <string msgid="6264217191555673260" name="search_menu_title">"검색"</string>
     <string name="secure_checkout">보안 체크 아웃</string>
     <string msgid="6043586758067023" name="selected">"선택됨"</string>
+    <string name="sepa_mandate">결제 정보를 제공하고 이 결제를 확인하면 (A) %s 및 결제 서비스 공급업체 Stripe가 은행에 계좌 출금에 관련한 지침을 전송하고 (B) 은행이 해당 지침에 따라 출금하도록 승인하는 것입니다. 귀하의 권리 중 일부로, 은행에 대한 이용 약관 동의 하에 은행에서 환불을 받을 자격을 부여받게 됩니다. 환불은 계좌에서 출금이 이루어진 날짜로부터 8주 이내에 요청해야 합니다. 귀하의 권리는 은행에서 받으시는 명세서에 설명되어 있습니다. 귀하는 향후 출금 시 최대 2일 전에 알림을 받겠다고 동의하는 것입니다.</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="stripe_3ds2_bzv_issuer_image_description">발급자 이미지</string>
     <string name="stripe_3ds2_bzv_payment_system_image_description">결제 시스템 이미지</string>
@@ -251,13 +259,9 @@
     <string name="stripe_paymentsheet_back">뒤로</string>
     <string name="stripe_paymentsheet_close">닫기</string>
     <string name="stripe_paymentsheet_continue_button_label">계속</string>
-    <string name="stripe_paymentsheet_eps_bank">EPS 은행</string>
     <string name="stripe_paymentsheet_expiration_date_hint">MM/YY</string>
-    <string name="stripe_paymentsheet_form_label_optional">%s(선택 사항)</string>
-    <string name="stripe_paymentsheet_ideal_bank">iDEAL 은행</string>
     <string name="stripe_paymentsheet_or_pay_using">또는 다음 결제 방식 사용</string>
     <string name="stripe_paymentsheet_or_pay_with_card">또는 카드 결제</string>
-    <string name="stripe_paymentsheet_p24_bank">Przelewy24 은행</string>
     <string name="stripe_paymentsheet_pay_button_amount">%s 결제</string>
     <string name="stripe_paymentsheet_pay_button_label">결제</string>
     <string name="stripe_paymentsheet_payment_method_afterpay_clearpay">Afterpay</string>
@@ -268,7 +272,6 @@
     <string name="stripe_paymentsheet_save_for_future_payments">향후 결제에 사용하도록 저장</string>
     <string name="stripe_paymentsheet_save_this_card_with_merchant_name">이 카드를 향후 %s 결제에 사용하도록 저장</string>
     <string name="stripe_paymentsheet_select_payment_method">결제 수단을 선택하세요.</string>
-    <string name="stripe_paymentsheet_sepa_mandate">결제 정보를 제공하고 이 결제를 확인하면 (A) %s 및 결제 서비스 공급업체 Stripe가 은행에 계좌 출금에 관련한 지침을 전송하고 (B) 은행이 해당 지침에 따라 출금하도록 승인하는 것입니다. 귀하의 권리 중 일부로, 은행에 대한 이용 약관 동의 하에 은행에서 환불을 받을 자격을 부여받게 됩니다. 환불은 계좌에서 출금이 이루어진 날짜로부터 8주 이내에 요청해야 합니다. 귀하의 권리는 은행에서 받으시는 명세서에 설명되어 있습니다. 귀하는 향후 출금 시 최대 2일 전에 알림을 받겠다고 동의하는 것입니다.</string>
     <string name="stripe_paymentsheet_setup_button_label">설정</string>
     <string name="stripe_paymentsheet_total_amount">합계 : %s</string>
     <string name="stripe_verify_your_payment">결제 확인</string>

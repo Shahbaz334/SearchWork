@@ -10,6 +10,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ba0c9134938dd47843f62ffaef3fc178/jetified-android-maps-utils-0.5/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ba0c9134938dd47843f62ffaef3fc178/jetified-android-maps-utils-0.5/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ba0c9134938dd47843f62ffaef3fc178/jetified-android-maps-utils-0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0981120ff99297df14137267c8be0c0/jetified-android-maps-utils-0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0981120ff99297df14137267c8be0c0/jetified-android-maps-utils-0.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0981120ff99297df14137267c8be0c0/jetified-android-maps-utils-0.5/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

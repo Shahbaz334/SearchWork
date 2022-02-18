@@ -14,20 +14,22 @@
                     }
                 },
                 {
-                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/89e3c17a28b00c2cccab14f7d47bf366/material-1.4.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/ab7a25c94769063bcd3abfa11ffc739e/material-1.5.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,177",
-                        "endColumns": "121,133",
-                        "endOffsets": "172,306"
+                        "startLines": "2,3,4,10",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,177,311,752",
+                        "endLines": "2,3,9,15",
+                        "endColumns": "121,133,10,10",
+                        "endOffsets": "172,306,747,1190"
                     },
                     "to": {
-                        "startLines": "11,12",
-                        "startColumns": "4,4",
-                        "startOffsets": "752,874",
-                        "endColumns": "121,133",
-                        "endOffsets": "869,1003"
+                        "startLines": "11,12,13,19",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "752,874,1008,1449",
+                        "endLines": "11,12,18,24",
+                        "endColumns": "121,133,10,10",
+                        "endOffsets": "869,1003,1444,1887"
                     }
                 }
             ]

@@ -4,6 +4,16 @@
             "outputFile": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
+                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/753745765b14761375b118fb16e0fda1/core-1.7.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
                     "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/96e295802c202f2588376762e6392204/appcompat-1.3.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/mapple.pk/.gradle/caches/transforms-2/files-2.1/70bca851df55f7eba40452598bcf59ee/core-1.6.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

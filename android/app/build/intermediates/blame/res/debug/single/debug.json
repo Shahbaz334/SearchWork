@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
         "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_antdesign.json.flat",
         "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/raw/node_modules_reactnativevectoricons_glyphmaps_antdesign.json"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
     },
     {
         "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/raw_src_constants_constants.json.flat",
@@ -96,6 +104,10 @@
         "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-mdpi/node_modules_reactnative_libraries_logbox_ui_logboximages_chevronleft.png"
     },
     {
+        "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
         "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
         "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-mdpi/node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
     },
@@ -114,6 +126,10 @@
     {
         "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_bgup.jpg.flat",
         "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-mdpi/assets_bgup.jpg"
+    },
+    {
+        "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
     },
     {
         "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
@@ -200,8 +216,16 @@
         "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/raw/node_modules_axios_package.json"
     },
     {
+        "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
         "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_applicants.png.flat",
         "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-mdpi/assets_applicants.png"
+    },
+    {
+        "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/generated/res/react/debug/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
     },
     {
         "merged": "/Users/mapple.pk/Documents/Search/SearchWork/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_edit.png.flat",

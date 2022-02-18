@@ -29,7 +29,8 @@
         "boostJob":"/boostjobs/packages",
         "jobPurchase":"/boostjobs/purchase",
         "payment": "/membership/purchase",
-        "verify_payment_intent":"/membership/verify_payment_intent"
+        "verify_payment_intent":"/membership/verify_payment_intent",
+        "boostjobs_verify_payment_intent":"/boostjobs/verify_payment_intent"
     },
     "methods": {
         "GET": "GET",

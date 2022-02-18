@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="29" />
+        android:targetSdkVersion="31" />
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -31,6 +31,8 @@
 
         <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
         <package android:name="com.android.chrome" />
+        <!-- Needs to be explicitly declared on Android R+ -->
+        <package android:name="com.google.android.apps.maps" />
     </queries>
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -307,6 +309,10 @@
                 <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
             </intent-filter>
         </receiver>
+
+        <meta-data
+            android:name="aia-compat-api-min-version"
+            android:value="1" />
     </application>
 
 </manifest>

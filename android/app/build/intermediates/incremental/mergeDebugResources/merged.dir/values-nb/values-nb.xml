@@ -125,24 +125,24 @@
     <string name="close">Lukk</string>
     <string msgid="406453423630273620" name="close_drawer">"Lukk navigasjonsmenyen"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Lukk arket"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Slå på"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> fungerer ikke med mindre du slår på Google Play-tjenester."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Slå på Google Play-tjenester"</string>
-    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Installer"</string>
-    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan ikke kjøre uten Google Play-tjenester, som ikke er installert på enheten din."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Installer Google Play-tjenester"</string>
-    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play Tjenester-tilgjengelighet"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play Tjenester-feil"</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> har problemer med Google Play-tjenester. Prøv på nytt."</string>
-    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan ikke kjøre uten Google Play-tjenester, som ikke støttes av enheten din."</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Oppdater"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kjører ikke med mindre du oppdaterer Google Play Tjenester."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Oppdater Google Play-tjenester"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kjører ikke uten Google Play-tjenester, som oppdateres akkurat nå."</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Du må installere en ny versjon av Google Play-tjenester. Appen oppdateres automatisk om en kort stund."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Åpne på telefonen"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Logg på"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Logg på med Google"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktivér</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s fungerer ikke med mindre du slår på Google Play-tjenester.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Slå på Google Play-tjenester</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installer</string>
+    <string name="common_google_play_services_install_text">%1$s kan ikke kjøre uten Google Play-tjenester, som ikke er installert på enheten din.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Installer Google Play-tjenester</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play Tjenester-tilgjengelighet</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Tjenester-feil</string>
+    <string name="common_google_play_services_unknown_issue">%1$s har problemer med Google Play-tjenester. Prøv på nytt.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s kan ikke kjøre uten Google Play-tjenester, som ikke støttes av enheten din.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Oppdater</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s kjører ikke med mindre du oppdaterer Google Play Tjenester.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Oppdater Google Play-tjenester</string>
+    <string name="common_google_play_services_updating_text">%1$s kjører ikke uten Google Play-tjenester, som oppdateres akkurat nå.</string>
+    <string name="common_google_play_services_wear_update_text">Du må installere en ny versjon av Google Play-tjenester. Appen oppdateres automatisk om en kort stund.</string>
+    <string name="common_open_on_phone">Åpne på telefonen</string>
+    <string name="common_signin_button_text">Logg på</string>
+    <string name="common_signin_button_text_long">Logg på med Google</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Linken er kopiert til utklippstavlen"</string>
     <string msgid="8038256446254964252" name="default_error_message">"Ugyldige inndata"</string>
     <string name="delete_payment_method">Slett betalingsmetode</string>
@@ -151,6 +151,7 @@
     <string name="edit">Rediger</string>
     <string name="email">E-post</string>
     <string name="email_is_invalid">E-posten din er ugyldig.</string>
+    <string name="eps_bank">EPS Bank</string>
     <string name="error_icon_content_description">Feil</string>
     <string name="expiry_date_hint">MM/ÅÅ</string>
     <string name="expiry_label_short">Utløp</string>
@@ -158,12 +159,14 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopiér linken"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Åpne i nettleseren"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Del link"</string>
+    <string name="form_label_optional">%s (valgfritt)</string>
     <string name="fpx_bank_offline">%s – frakoblet</string>
     <string name="iban_incomplete">IBAN-nummeret du la inn er ufullstendig.</string>
     <string name="iban_invalid">IBAN-nummeret du la inn er ugyldig.</string>
     <string name="iban_invalid_country">IBAN-nummeret du la inn er ugyldig, «%s» er ikke en gyldig landskode.</string>
     <string name="iban_invalid_start">IBAN-nummeret skal starte med en tosifret landskode.</string>
     <string name="icon_content_description">Dialogboksikon</string>
+    <string name="ideal_bank">iDEAL Bank</string>
     <string msgid="6827826412747255547" name="in_progress">"Pågår"</string>
     <string name="incomplete_expiry_date">Kortets utløpsdato er ufullstendig.</string>
     <string msgid="2486394087603402002" name="indeterminate">"Verken avmerket eller ikke avmerket"</string>
@@ -174,6 +177,8 @@
     <string name="invalid_shipping_information">Ugyldig leveringsadresse</string>
     <string name="invalid_zip">Postnummeret er ufullstendig.</string>
     <string name="item_view_role_description">Fane</string>
+    <string name="klarna_buy_now_pay_later">Kjøp nå eller betal senere med Klarna.</string>
+    <string name="klarna_pay_later">Betal senere med Klarna.</string>
     <string name="material_clock_toggle_content_description">Velg AM eller PM</string>
     <string name="material_hour_selection">Velg time</string>
     <string name="material_hour_suffix">%1$s null-null</string>
@@ -223,15 +228,18 @@
     <string msgid="6610465462668679431" name="not_selected">"Ikke valgt"</string>
     <string msgid="875452955155264703" name="off">"Av"</string>
     <string msgid="8655164131929253426" name="on">"På"</string>
+    <string name="p24_bank">Przelewy24 Bank</string>
     <string name="password_toggle_content_description">Vis passordet</string>
     <string name="payment_method_add_new_card">Legg til nytt kort …</string>
     <string name="payment_method_add_new_fpx">Velg bankkonto (FPX) …</string>
     <string name="price_free">Gratis</string>
     <string name="remove">Fjern</string>
     <string name="removed">Fjernet %s</string>
+    <string name="save_for_future_payments_with_merchant_name">Lagre til fremtidige betalinger til %s</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Søk"</string>
     <string name="secure_checkout">Sikker utsjekking</string>
     <string msgid="6043586758067023" name="selected">"Valgt"</string>
+    <string name="sepa_mandate">Ved å oppgi betalingsinformasjonen din og bekrefte denne betalingen gir du tillatelse til at (A) %s og Stripe, vår leverandør for betalingstjenesten, sende anmodning til banken din om å belaste kontoen din og (B) banken din belaster kontoen din i samsvar med anmodningen. Som del av dine rettigheter kan du kreve å få beløpet tilbakeført i henhold til avtalen du har med banken. Tilbakeføringskrav må fremsettes innen 8 uker etter at kontoen ble belastet. Rettighetene dine blir forklart i en erklæring som du kan få fra banken. Du godtar å motta varsler om fremtidige belastninger opptil to dager før de skjer.</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="stripe_failure_connection_error">Det har oppstått et problem under tilkoblingen til betalingstjenesten. Kontroller Internett-forbindelsen og prøv igjen.</string>
     <string name="stripe_failure_reason_authentication">Vi kan ikke godkjenne betalingsmåten din. Vennligst velg en annen betalingsmetode og prøv igjen.</string>
@@ -244,13 +252,9 @@
     <string name="stripe_paymentsheet_back">Tilbake</string>
     <string name="stripe_paymentsheet_close">Lukk</string>
     <string name="stripe_paymentsheet_continue_button_label">Fortsett</string>
-    <string name="stripe_paymentsheet_eps_bank">EPS Bank</string>
     <string name="stripe_paymentsheet_expiration_date_hint">MM / ÅÅ</string>
-    <string name="stripe_paymentsheet_form_label_optional">%s (valgfritt)</string>
-    <string name="stripe_paymentsheet_ideal_bank">iDEAL Bank</string>
     <string name="stripe_paymentsheet_or_pay_using">Eller betal med</string>
     <string name="stripe_paymentsheet_or_pay_with_card">Eller betal med et kort</string>
-    <string name="stripe_paymentsheet_p24_bank">Przelewy24 Bank</string>
     <string name="stripe_paymentsheet_pay_button_amount">Betal %s</string>
     <string name="stripe_paymentsheet_pay_button_label">Betal</string>
     <string name="stripe_paymentsheet_payment_method_afterpay_clearpay">Afterpay</string>
@@ -261,7 +265,6 @@
     <string name="stripe_paymentsheet_save_for_future_payments">Lagre til fremtidige betalinger</string>
     <string name="stripe_paymentsheet_save_this_card_with_merchant_name">Lagre kortet til fremtidige betalinger hos %s</string>
     <string name="stripe_paymentsheet_select_payment_method">Velg betalingsmetode</string>
-    <string name="stripe_paymentsheet_sepa_mandate">Ved å oppgi betalingsinformasjonen din og bekrefte denne betalingen gir du tillatelse til at (A) %s og Stripe, vår leverandør for betalingstjenesten, sende anmodning til banken din om å belaste kontoen din og (B) banken din belaster kontoen din i samsvar med anmodningen. Som del av dine rettigheter kan du kreve å få beløpet tilbakeført i henhold til avtalen du har med banken. Tilbakeføringskrav må fremsettes innen 8 uker etter at kontoen ble belastet. Rettighetene dine blir forklart i en erklæring som du kan få fra banken. Du godtar å motta varsler om fremtidige belastninger opptil to dager før de skjer.</string>
     <string name="stripe_paymentsheet_setup_button_label">Konfigurer</string>
     <string name="stripe_paymentsheet_total_amount">Total: %s</string>
     <string name="stripe_verify_your_payment">Verifiser betalingen din</string>

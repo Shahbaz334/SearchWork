@@ -125,24 +125,24 @@
     <string name="close">Stäng</string>
     <string msgid="406453423630273620" name="close_drawer">"Stäng navigeringsmenyn"</string>
     <string msgid="7573152094250666567" name="close_sheet">"Stäng kalkylarket"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Aktivera"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> fungerar inte om du inte aktiverar Google Play-tjänster."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Aktivera Google Play-tjänster"</string>
-    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Installera"</string>
-    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan inte köras utan Google Play-tjänsterna, som saknas på enheten."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Hämta Google Play-tjänster"</string>
-    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Tillgänglighet för Google Plays tjänster"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Fel på Google Play-tjänster"</string>
-    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"Det har uppstått ett fel mellan <ns1:g id="APP_NAME">%1$s</ns1:g> och Google Play-tjänsterna. Försök igen."</string>
-    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> fungerar inte utan Google Play-tjänsterna, som inte stöds på enheten."</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Uppdatera"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan inte köras om du inte uppdaterar Google Play-tjänsterna."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Uppdatera Google Play-tjänster"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan inte köras utan Google Play-tjänster, och dessa uppdateras för närvarande."</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"En ny version av Google Play-tjänster krävs. Den uppdateras automatiskt inom kort."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Öppna på mobilen"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Logga in"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Logga in med Google"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktivera</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s fungerar inte om du inte aktiverar Google Play-tjänster.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Aktivera Google Play-tjänster</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installera</string>
+    <string name="common_google_play_services_install_text">%1$s kan inte köras utan Google Play-tjänsterna, som saknas på enheten.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Hämta Google Play-tjänster</string>
+    <string name="common_google_play_services_notification_channel_name">Tillgänglighet för Google Plays tjänster</string>
+    <string name="common_google_play_services_notification_ticker">Fel på Google Play-tjänster</string>
+    <string name="common_google_play_services_unknown_issue">Det har uppstått ett fel mellan %1$s och Google Play-tjänsterna. Försök igen.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s fungerar inte utan Google Play-tjänsterna, som inte stöds på enheten.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Uppdatera</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s kan inte köras om du inte uppdaterar Google Play-tjänsterna.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Uppdatera Google Play-tjänster</string>
+    <string name="common_google_play_services_updating_text">%1$s kan inte köras utan Google Play-tjänster, och dessa uppdateras för närvarande.</string>
+    <string name="common_google_play_services_wear_update_text">En ny version av Google Play-tjänster krävs. Den uppdateras automatiskt inom kort.</string>
+    <string name="common_open_on_phone">Öppna på mobilen</string>
+    <string name="common_signin_button_text">Logga in</string>
+    <string name="common_signin_button_text_long">Logga in med Google</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Länk kopierad till Urklipp"</string>
     <string msgid="8038256446254964252" name="default_error_message">"Ogiltiga indata"</string>
     <string name="delete_payment_method">Ta bort betalningsmetoden</string>
@@ -151,6 +151,7 @@
     <string name="edit">Redigera</string>
     <string name="email">E-post</string>
     <string name="email_is_invalid">Din e-postadress är ogiltig.</string>
+    <string name="eps_bank">EPS Bank</string>
     <string name="error_icon_content_description">Fel</string>
     <string name="expiry_date_hint">MM/ÅÅ</string>
     <string name="expiry_label_short">Giltighetstid</string>
@@ -158,12 +159,14 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopiera länk"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Öppna i webbläsaren"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Dela länk"</string>
+    <string name="form_label_optional">%s (valfritt)</string>
     <string name="fpx_bank_offline">%s - offline</string>
     <string name="iban_incomplete">Angivet IBAN är ofullständigt.</string>
     <string name="iban_invalid">Angivet IBAN är ogiltigt.</string>
     <string name="iban_invalid_country">Angivet IBAN är ogiltigt, \"%s\" är inte en giltig landskod.</string>
     <string name="iban_invalid_start">Ditt IBAN ska börja med en landskod (två bokstäver).</string>
     <string name="icon_content_description">Dialogikon</string>
+    <string name="ideal_bank">iDEAL Bank</string>
     <string msgid="6827826412747255547" name="in_progress">"Pågår"</string>
     <string name="incomplete_expiry_date">Kortets utgångsdatum är ofullständigt.</string>
     <string msgid="2486394087603402002" name="indeterminate">"Varken markerad eller avmarkerad"</string>
@@ -174,6 +177,8 @@
     <string name="invalid_shipping_information">Ogiltig leveransadress</string>
     <string name="invalid_zip">Ditt postnummer är ofullständigt.</string>
     <string name="item_view_role_description">Flik</string>
+    <string name="klarna_buy_now_pay_later">Köp nu eller betala senare med Klarna.</string>
+    <string name="klarna_pay_later">Betala senare med Klarna.</string>
     <string name="material_clock_toggle_content_description">Välj mellan FM och EM</string>
     <string name="material_hour_selection">Ange timme</string>
     <string name="material_hour_suffix">Klockan %1$s</string>
@@ -223,15 +228,18 @@
     <string msgid="6610465462668679431" name="not_selected">"Inte vald"</string>
     <string msgid="875452955155264703" name="off">"Av"</string>
     <string msgid="8655164131929253426" name="on">"På"</string>
+    <string name="p24_bank">Przelewy24 Bank</string>
     <string name="password_toggle_content_description">Visa lösenord</string>
     <string name="payment_method_add_new_card">Lägg till nytt kort ...</string>
     <string name="payment_method_add_new_fpx">Välj bankkonto (FPX) ...</string>
     <string name="price_free">Gratis</string>
     <string name="remove">Ta bort</string>
     <string name="removed">Borttaget %s</string>
+    <string name="save_for_future_payments_with_merchant_name">Spara för framtida %s-betalningar</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Sök"</string>
     <string name="secure_checkout">Säker betalning</string>
     <string msgid="6043586758067023" name="selected">"Valt"</string>
+    <string name="sepa_mandate">Genom att tillhandahålla din betalningsinformation och bekräfta denna betalning godkänner du (A) %s och Stripe, vår betaltjänstleverantör, att skicka instruktioner till din bank att debitera ditt konto och (B) din bank att debitera ditt konto i enlighet med dessa instruktioner. Som en del av dina rättigheter har du rätt till återbetalning från din bank enligt villkoren för ditt avtal med din bank. Återbetalning måste krävas inom åtta veckor från det datum då ditt konto debiterades. Dina rättigheter förklaras i ett utdrag som du kan få från din bank. Du godkänner att få aviseringar för framtida debiteringar upp till två dagar innan de inträffar.</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="stripe_failure_connection_error">Vi har problem med anslutningen till vår leverantör av betalningstjänster. Kontrollera internetanslutningen och försök igen.</string>
     <string name="stripe_failure_reason_authentication">Vi kan inte verifiera din betalningsmetod. Välj en annan betalningsmetod och försök igen.</string>
@@ -244,13 +252,9 @@
     <string name="stripe_paymentsheet_back">Tillbaka</string>
     <string name="stripe_paymentsheet_close">Stäng</string>
     <string name="stripe_paymentsheet_continue_button_label">Fortsätt</string>
-    <string name="stripe_paymentsheet_eps_bank">EPS Bank</string>
     <string name="stripe_paymentsheet_expiration_date_hint">MM / ÅÅ</string>
-    <string name="stripe_paymentsheet_form_label_optional">%s (valfritt)</string>
-    <string name="stripe_paymentsheet_ideal_bank">iDEAL Bank</string>
     <string name="stripe_paymentsheet_or_pay_using">Eller betala genom att använda</string>
     <string name="stripe_paymentsheet_or_pay_with_card">Eller betala med ett kort</string>
-    <string name="stripe_paymentsheet_p24_bank">Przelewy24 Bank</string>
     <string name="stripe_paymentsheet_pay_button_amount">Betala %s</string>
     <string name="stripe_paymentsheet_pay_button_label">Betala</string>
     <string name="stripe_paymentsheet_payment_method_afterpay_clearpay">Afterpay</string>
@@ -261,7 +265,6 @@
     <string name="stripe_paymentsheet_save_for_future_payments">Spara för framtida betalningar</string>
     <string name="stripe_paymentsheet_save_this_card_with_merchant_name">Spara detta kort för framtiden %s betalningar</string>
     <string name="stripe_paymentsheet_select_payment_method">Välj din betalningsmetod</string>
-    <string name="stripe_paymentsheet_sepa_mandate">Genom att tillhandahålla din betalningsinformation och bekräfta denna betalning godkänner du (A) %s och Stripe, vår betaltjänstleverantör, att skicka instruktioner till din bank att debitera ditt konto och (B) din bank att debitera ditt konto i enlighet med dessa instruktioner. Som en del av dina rättigheter har du rätt till återbetalning från din bank enligt villkoren för ditt avtal med din bank. Återbetalning måste krävas inom åtta veckor från det datum då ditt konto debiterades. Dina rättigheter förklaras i ett utdrag som du kan få från din bank. Du godkänner att få aviseringar för framtida debiteringar upp till två dagar innan de inträffar.</string>
     <string name="stripe_paymentsheet_setup_button_label">Konfigurera</string>
     <string name="stripe_paymentsheet_total_amount">Totalt: %s</string>
     <string name="stripe_verify_your_payment">Verifiera din betalning</string>
