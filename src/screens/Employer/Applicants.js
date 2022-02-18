@@ -172,7 +172,7 @@ const Applicants = ({ navigation, route }) => {
                     keyExtractor={(key, index) => index.toString()}
                     renderItem={ApplicantsList}
                     ItemSeparatorComponent={Separator}
-                  />{" "}
+                  />
                 </View>
               ) : (
                 <>
