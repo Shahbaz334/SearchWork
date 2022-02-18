@@ -404,7 +404,7 @@ const JobPostedList = ({ navigation }) => {
   return jobs == undefined || jobs?.length == 0 ? (
     <>
       <NoData />
-      <SafeAreaView />
+      <SafeAreaView style={{ backgroundColor: colors.primaryColor }} />
       <ErrorModal
         isVisible={accountStatusModal}
         message={"Your account is paused. Un-pause it to continue..."}
@@ -418,7 +418,7 @@ const JobPostedList = ({ navigation }) => {
     </>
   ) : (
     <View style={{ flex: 1 }}>
-      <SafeAreaView />
+      <SafeAreaView style={{ backgroundColor: colors.primaryColor }} />
       <CustomModal
         isVisible={modalVisible}
         imageSource={require("../../../assets/diagnostic.png")}

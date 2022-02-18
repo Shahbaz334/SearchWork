@@ -172,7 +172,7 @@ const EmployerDrawerContent = ({ navigation }) => {
 
   return (
     <View style={{ flex: 1 }} screenProps={{ selectedLang }}>
-      <SafeAreaView />
+      <SafeAreaView style={{ backgroundColor: colors.primaryColor }} />
       <View style={styles.headerContainer}>
         <View style={{ position: "absolute", width: "100%", padding: 9 }}>
           <View

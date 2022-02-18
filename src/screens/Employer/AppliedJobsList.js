@@ -167,7 +167,7 @@ const AppliedJobsList = ({ navigation }) => {
 
   return applicantsList != undefined ? (
     <View style={styles.container}>
-      <SafeAreaView />
+      <SafeAreaView style={{ backgroundColor: colors.primaryColor }} />
 
       <StatusBar backgroundColor={colors.primaryColor} />
 

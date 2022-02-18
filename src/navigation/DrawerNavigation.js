@@ -26,6 +26,9 @@ const DrawerNavigation = () => {
       drawerStyle={styles.drawerStyle}
       drawerContent={(props) => <DrawerContent {...props} />}
       initialRouteName={Constants.screen.BottomTabNavigation}
+      screenOptions={{
+        headerShown: false,
+      }}
     >
       <Drawer.Screen
         name={Constants.screen.BottomTabNavigation}

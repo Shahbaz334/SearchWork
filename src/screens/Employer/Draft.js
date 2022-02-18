@@ -177,7 +177,7 @@ const Draft = ({ navigation }) => {
     </View>
   ) : (
     <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator={false}>
-      <SafeAreaView />
+      <SafeAreaView style={{ backgroundColor: colors.primaryColor }} />
       <CustomModal
         type="confirmation"
         isVisible={modalVisible}

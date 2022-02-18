@@ -308,7 +308,7 @@ const JobPosted = ({ navigation }) => {
       style={{ flex: 1 }}
       showsVerticalScrollIndicator={false}
     >
-      <SafeAreaView />
+      <SafeAreaView style={{ backgroundColor: colors.primaryColor }} />
       <ErrorModal
         isVisible={errorModal}
         message={errorMessage}

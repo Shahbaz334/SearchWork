@@ -5,7 +5,7 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 const Payme = () => {
   return (
     <View style={{ alignItems: "center" }}>
-      <SafeAreaView />
+      <SafeAreaView style={{ backgroundColor: colors.primaryColor }} />
       <View style={styles.main_div}>
         <View style={styles.text1}>
           <Text

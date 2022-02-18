@@ -29,6 +29,9 @@ const BottomTabNavigation = () => {
         style: styles.navigatorContainer,
         keyboardHidesTabBar: true,
       }}
+      screenOptions={{
+        headerShown: false,
+      }}
     >
       <Screen
         name={Constants.screen.EmployeeDashboard}

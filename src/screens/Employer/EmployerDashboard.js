@@ -163,159 +163,156 @@ const EmployerDashboard = ({ navigation }) => {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <ScrollView
-        screenProps={{ selectedLang }}
-        style={{ backgroundColor: colors.white, flex: 1 }}
-        showsVerticalScrollIndicator={false}
-      >
-        <StatusBar backgroundColor={colors.primaryColor} />
+    <ScrollView
+      screenProps={{ selectedLang }}
+      style={{ backgroundColor: colors.white, flex: 1 }}
+      showsVerticalScrollIndicator={false}
+    >
+      <SafeAreaView style={{ backgroundColor: colors.primaryColor }} />
+      <StatusBar backgroundColor={colors.primaryColor} />
 
-        <ErrorModal
-          isVisible={errorModal}
-          message={errorMessage}
-          onPress={() => setErrorModal(false)}
-        />
+      <ErrorModal
+        isVisible={errorModal}
+        message={errorMessage}
+        onPress={() => setErrorModal(false)}
+      />
 
-        <View style={styles.headerContainer}>
-          <HeaderRowContainer>
-            <View>
-              <MenuIcon
-                iconColor={colors.darkGray}
-                onPress={() => navigation.openDrawer()}
-              />
-              <EmployerLogo />
-            </View>
-
-            <LanguagePicker
-              viewStyle={{ width: 75 }}
-              containerStyle={{ flex: 1 }}
-              value={lang}
-              setValue={setLang}
-              open={dropDown}
-              setOpen={setDropDown}
+      <View style={styles.headerContainer}>
+        <HeaderRowContainer>
+          <View>
+            <MenuIcon
+              iconColor={colors.darkGray}
+              onPress={() => navigation.openDrawer()}
             />
-          </HeaderRowContainer>
+            <EmployerLogo />
+          </View>
+
+          <LanguagePicker
+            viewStyle={{ width: 75 }}
+            containerStyle={{ flex: 1 }}
+            value={lang}
+            setValue={setLang}
+            open={dropDown}
+            setOpen={setDropDown}
+          />
+        </HeaderRowContainer>
+      </View>
+
+      <Image
+        source={require("../../../assets/bgSlide.jpg")}
+        style={styles.image}
+      />
+
+      <View style={{ alignItems: "center", marginBottom: 20 }}>
+        <View style={{ position: "absolute", bottom: -35 }}>
+          <ProfilePicture
+            emptyContainerStyle={styles.profilePicture}
+            imageStyle={{ ...styles.profilePicture, borderWidth: 2 }}
+            iconSize={50}
+            imageSource={
+              userProfile?.image_urls != undefined &&
+              userProfile?.image_urls["3x"]
+            }
+            disabled={true}
+          />
+        </View>
+      </View>
+
+      <View
+        style={{ alignItems: "center", marginTop: 20, marginHorizontal: 15 }}
+      >
+        <View
+          style={{
+            flexDirection: "row",
+            flexWrap: "wrap",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Text
+            style={{
+              color: colors.darkGray,
+              fontSize: 22,
+              fontWeight: "bold",
+            }}
+          >
+            {LocalStrings.Welcome}
+          </Text>
+          <Text
+            style={{
+              color: colors.primaryColor,
+              fontSize: 22,
+              fontWeight: "bold",
+              flexWrap: "wrap",
+            }}
+          >
+            {userProfile?.name}
+          </Text>
         </View>
 
-        <Image
-          source={require("../../../assets/bgSlide.jpg")}
-          style={styles.image}
-        />
+        {/* <TouchableOpacity onPress={() => ChangeLanguage("en")}> */}
+        <Text
+          style={{ color: colors.darkGray, fontWeight: "bold", fontSize: 13 }}
+        >
+          {LocalStrings.welcome}
+        </Text>
+        {/* </TouchableOpacity> */}
+      </View>
 
-        <View style={{ alignItems: "center", marginBottom: 20 }}>
-          <View style={{ position: "absolute", bottom: -35 }}>
-            <ProfilePicture
-              emptyContainerStyle={styles.profilePicture}
-              imageStyle={{ ...styles.profilePicture, borderWidth: 2 }}
-              iconSize={50}
-              imageSource={
-                userProfile?.image_urls != undefined &&
-                userProfile?.image_urls["3x"]
-              }
-              disabled={true}
-            />
-          </View>
+      <View style={{ padding: 15 }}>
+        <View style={{ flexDirection: "row", alignItems: "center" }}>
+          <Text style={{ fontWeight: "bold", color: colors.darkGray }}>
+            {LocalStrings.dashboard}
+          </Text>
+          <Divider style={{ flex: 1, marginLeft: 5 }} />
         </View>
 
         <View
-          style={{ alignItems: "center", marginTop: 20, marginHorizontal: 15 }}
+          style={{
+            marginTop: 10,
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+          }}
         >
-          <View
-            style={{
-              flexDirection: "row",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Text
-              style={{
-                color: colors.darkGray,
-                fontSize: 22,
-                fontWeight: "bold",
-              }}
-            >
-              {LocalStrings.Welcome}
-            </Text>
-            <Text
-              style={{
-                color: colors.primaryColor,
-                fontSize: 22,
-                fontWeight: "bold",
-                flexWrap: "wrap",
-              }}
-            >
-              {userProfile?.name}
-            </Text>
-          </View>
+          <BgCard
+            bgImage={require("../../../assets/red.png")}
+            iconImage={require("../../../assets/edit.png")}
+            title={LocalStrings.PostJob}
+            onPress={() => navigation.navigate(Constants.screen.JobPosted)}
+          />
 
-          {/* <TouchableOpacity onPress={() => ChangeLanguage("en")}> */}
-          <Text
-            style={{ color: colors.darkGray, fontWeight: "bold", fontSize: 13 }}
-          >
-            {LocalStrings.welcome}
-          </Text>
-          {/* </TouchableOpacity> */}
+          <BgCard
+            bgImage={require("../../../assets/green.png")}
+            iconImage={require("../../../assets/search.png")}
+            title={LocalStrings.MyJobs}
+            onPress={() => navigation.navigate(Constants.screen.JobPostedList)}
+          />
+
+          <BgCard
+            style={{ marginTop: 10 }}
+            bgImage={require("../../../assets/blue.png")}
+            iconImage={require("../../../assets/applicants.png")}
+            title={LocalStrings.ViewApplications}
+            onPress={() =>
+              navigation.navigate(Constants.screen.AppliedJobsList)
+            }
+          />
+
+          <BgCard
+            style={{ marginTop: 10 }}
+            bgImage={require("../../../assets/purple.png")}
+            iconImage={require("../../../assets/profile.png")}
+            title={LocalStrings.ManageProfile}
+            onPress={() =>
+              navigation.navigate(Constants.screen.EmployerProfile)
+            }
+          />
         </View>
+      </View>
 
-        <View style={{ padding: 15 }}>
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <Text style={{ fontWeight: "bold", color: colors.darkGray }}>
-              {LocalStrings.dashboard}
-            </Text>
-            <Divider style={{ flex: 1, marginLeft: 5 }} />
-          </View>
-
-          <View
-            style={{
-              marginTop: 10,
-              flexDirection: "row",
-              flexWrap: "wrap",
-              justifyContent: "space-between",
-            }}
-          >
-            <BgCard
-              bgImage={require("../../../assets/red.png")}
-              iconImage={require("../../../assets/edit.png")}
-              title={LocalStrings.PostJob}
-              onPress={() => navigation.navigate(Constants.screen.JobPosted)}
-            />
-
-            <BgCard
-              bgImage={require("../../../assets/green.png")}
-              iconImage={require("../../../assets/search.png")}
-              title={LocalStrings.MyJobs}
-              onPress={() =>
-                navigation.navigate(Constants.screen.JobPostedList)
-              }
-            />
-
-            <BgCard
-              style={{ marginTop: 10 }}
-              bgImage={require("../../../assets/blue.png")}
-              iconImage={require("../../../assets/applicants.png")}
-              title={LocalStrings.ViewApplications}
-              onPress={() =>
-                navigation.navigate(Constants.screen.AppliedJobsList)
-              }
-            />
-
-            <BgCard
-              style={{ marginTop: 10 }}
-              bgImage={require("../../../assets/purple.png")}
-              iconImage={require("../../../assets/profile.png")}
-              title={LocalStrings.ManageProfile}
-              onPress={() =>
-                navigation.navigate(Constants.screen.EmployerProfile)
-              }
-            />
-          </View>
-        </View>
-
-        <CompanyLabelCard />
-      </ScrollView>
-    </SafeAreaView>
+      <CompanyLabelCard />
+    </ScrollView>
   );
 };
 

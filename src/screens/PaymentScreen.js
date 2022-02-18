@@ -38,7 +38,7 @@ const Payment_Screen = (props) => {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.primaryColor }}>
-      <SafeAreaView />
+      <SafeAreaView style={{ backgroundColor: colors.primaryColor }} />
       <Logo />
       <FlatList
         data={package_Sub}
