@@ -11,12 +11,12 @@ const items = [
   {
     label: "English",
     value: "en",
-    icon: require("../../../assets/usa.png"),
+    // icon: require("../../../assets/usa.png"),
   },
   {
     label: "Spanish",
     value: "sp",
-    icon: require("../../../assets/spain.png"),
+    // icon: require("../../../assets/spain.png"),
   },
 ];
 
@@ -60,7 +60,7 @@ const LanguagePicker = () => {
               dispatch(setLanguage(data.value));
             }}
           >
-            <Image source={data.icon} style={styles.iconImage} />
+            {/* <Image source={data.icon} style={styles.iconImage} /> */}
             <Text style={{ paddingHorizontal: 5 }}>{data.label}</Text>
           </TouchableOpacity>
         );
