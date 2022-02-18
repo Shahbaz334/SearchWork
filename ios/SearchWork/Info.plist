@@ -2,6 +2,47 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>YOUR-PURPOSE-KEY</key>
+		<string>Search work need access</string>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSSiriUsageDescription</key>
+	<string>Search work need access</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Search work need access</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -35,8 +76,6 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>
